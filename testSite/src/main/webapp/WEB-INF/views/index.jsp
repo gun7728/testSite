@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Notice</title>
 <link rel="stylesheet" href="http://localhost:9000/test/css/gj.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
 			</div>
 			<ul class="list">
 			<li>
-				<a href="index.do">공지사항</a>
+				<a href="index.do" class="select_on">공지사항</a>
 			</li>
 			<li>
 				<a href="map.do">지도</a>

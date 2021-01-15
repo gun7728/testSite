@@ -10,14 +10,33 @@
 	src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bcff40663f677af0a69dbdb9951c1630"></script>
 </head>
 <body>
-<h1>지도 테스트</h1>
+<div id="index_content">
+		<section class="contentWrap">
+			<div class="main_text_field">
+				<h1 class="main_text">매장위치</h1>
+				<p class="sub_text">
+				<span>Bean's Story의 위치입니다.</span>
+				<br>Kakao 맵을 통해 위치를 확인하세요.
+				</p>
+			</div>
+			<ul class="list">
+			<li>
+				<a href="index.do">공지사항</a>
+			</li>
+			<li>
+				<a href="map.do"  class="select_on">지도</a>
+			</li>
+			<li>
+				<a href="youtube.do">유튜브</a>
+			</li>
+			</ul>
+		</section>
+
+
 	
 	<div id="map" style="width: 500px; height: 400px;"></div>
 
-
-
-
-
+</div>
 
 
 
