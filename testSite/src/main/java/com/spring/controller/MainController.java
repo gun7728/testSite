@@ -16,6 +16,16 @@ public class MainController {
 	public String youtube() {
 		return "youtube";
 	}
+	@RequestMapping(value="/event.do",method=RequestMethod.GET)
+	public String event() {
+		return "event";
+	}
+	
+	@RequestMapping(value="/question.do",method=RequestMethod.GET)
+	public String question() {
+		return "question";
+	}
+	
 	@RequestMapping(value="/map.do",method=RequestMethod.GET)
 	public String map() {
 		return "map";

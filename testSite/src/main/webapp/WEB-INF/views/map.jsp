@@ -19,17 +19,17 @@
 				<br>Kakao 맵을 통해 위치를 확인하세요.
 				</p>
 			</div>
-			<ul class="list">
-			<li>
-				<a href="index.do">공지사항</a>
-			</li>
-			<li>
-				<a href="map.do"  class="select_on">지도</a>
-			</li>
-			<li>
-				<a href="youtube.do">유튜브</a>
-			</li>
-			</ul>
+			<div class="list">
+				<ul>
+					<li><a href="index.do" >공지사항</a></li>
+					<li><a href="event.do">이벤트</a></li>
+					<li><a href="question.do">자주 묻는 질문</a></li>
+				</ul>
+				<ul>
+					<li><a href="map.do" class="select_on">지도</a></li>
+					<li><a href="youtube.do">유튜브</a></li>
+				</ul>
+			</div>
 		</section>
 
 
