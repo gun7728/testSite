@@ -83,7 +83,17 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fi
 
 
 
+.y_content{
+	border:1px solid black;
+}
 
+.hnu_text{
+	background: #84847c;
+	width:100px; height:100px; 
+	border: 1px solid black;
+	float: right
+	
+}
 
 
 
