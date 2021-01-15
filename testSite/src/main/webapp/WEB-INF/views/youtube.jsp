@@ -17,11 +17,17 @@
 					<span>Bean's Story의 유튜브를 확인하세요</span> <br>다양한 영상들이 여러분들 환영합니다.
 				</p>
 			</div>
-			<ul class="list">
-				<li><a href="index.do">공지사항</a></li>
-				<li><a href="map.do">지도</a></li>
-				<li><a href="youtube.do" class="select_on">유튜브</a></li>
-			</ul>
+			<div class="list">
+				<ul>
+					<li><a href="index.do" >공지사항</a></li>
+					<li><a href="event.do">이벤트</a></li>
+					<li><a href="question.do">자주 묻는 질문</a></li>
+				</ul>
+				<ul>
+					<li><a href="map.do">지도</a></li>
+					<li><a href="youtube.do" class="select_on">유튜브</a></li>
+				</ul>
+			</div>
 		</section>
 		<section class="y_content">
 	<div>
