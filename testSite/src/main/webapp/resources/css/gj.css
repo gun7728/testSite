@@ -104,6 +104,12 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fi
 
 
 
+.notice_content{
+	border-top:5px solid brown;
+	width:60%;
+	margin:auto;
+	margin-top:50px;
+}
 
 
 
@@ -134,7 +140,64 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fi
 
 
 
+/**
+	notice_open
+*/
 
+
+details[open] summary ~ * {
+  animation: open 0.3s ease-in-out;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  width: 100%;
+  padding: 20px 0 0 0;
+  border-bottom: 1px solid black;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 300;
+  list-style: none;
+  height:50px;
+}
+
+details summary:after {
+  content: "+";
+  color: black;
+  position: absolute;
+  font-size: 1.75rem;
+  line-height: 0;
+  margin-top: 0.75rem;
+  right: 0;
+  font-weight: 200;
+  transform-origin: center;
+  transition: 200ms linear;
+  background-color:light-gray;
+}
+details[open] summary:after {
+  transform: rotate(45deg);
+  font-size: 2rem;
+}
+details summary {
+  outline: 0;
+}
+details p {
+  font-size: 0.95rem;
+  margin:40px 0 40px 100px;
+  padding-top: 1rem;
+}
 
 
 
