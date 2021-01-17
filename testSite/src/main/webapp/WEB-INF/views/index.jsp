@@ -17,7 +17,7 @@
 			for (var i = 0; i < len; i++) {
 				if (i != index) {
 					$("details")[i].removeAttribute("open");
-				}  
+				}
 			}
 		}); 
 	});
