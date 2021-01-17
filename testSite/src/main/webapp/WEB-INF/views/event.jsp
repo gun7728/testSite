@@ -14,7 +14,7 @@
 				<h1 class="main_text">이벤트</h1>
 				<p class="sub_text">
 					<span>Bean's Story의 다양한 이벤트를</span> 
-					<br>만나보세요
+					<br>만나보세요!!
 				</p>
 			</div>
 			<div class="list">
