@@ -30,18 +30,17 @@
 			</div>
 		</section>
 		<section class="y_content">
-	<div>
-	 <h1 class="hnu_text">HOME > 공지사항 > 유튜브 </h1>
-	 <h1 class="huu2_text"> Bean's Story의 다양한 컨텐츠를 확인하세요 </h1>
-	 
-	</div>
-
-			<!-- 유튭 -->
-			<iframe width="1120" height="630"
-				src="https://www.youtube.com/embed/wvyV5k2NADY" frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen></iframe>
-		
+			<div class="ymain_content">
+				 <h1 class="hny_text">HOME > 공지사항 > 유튜브 </h1>
+				 <h1 class="hny2_text"> Bean's Story의 다양한 컨텐츠를 확인하세요 </h1>
+			</div>
+			<div class="youtube_content">
+				<!-- 유튭 -->
+				<iframe width="1120" height="630"
+					src="https://www.youtube.com/embed/wvyV5k2NADY" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</div>
 		
 		</section>
 
