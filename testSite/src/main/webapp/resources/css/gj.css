@@ -91,20 +91,44 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fi
 
 
 .y_content{
-	border:1px solid black;
+
 }
 
-.hny_text{
+.ymain_box{
+/* 	border:1px solid black; */
+ 	width: 60%;
+	margin: auto;
+	margin-top:50px;
+}
+
+.hny_text {	
+	/*  border: 1px solid green;*/
+}
+
+.hny2_text {	
+	/*  border: 1px solid red;*/
+	margin-top:70px;
+}
+
+.hny_text h1{
 	color: #84847c;
 	font-size:15px;
-	border: 1px solid black;
-	float: right;
+	 /* float: right;  */
+	 text-align:right;
 	
 }
-.hny2_text{
+.hny2_text h1{
 	color: #A37758;
-	float: center; 
-	
+	text-align:center; 
+
+}
+
+.yline{
+	border-top:3px solid rgb(177,177,177);
+	width: 2.2%; 
+	margin: auto;
+	margin-top : 20px;
+	margin-bottom : 20px;
 }
 
 .notice_content{
@@ -114,7 +138,10 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fi
 	margin-top:50px;
 }
 
-
+.youtube_content{
+	border:1px solid green;
+	margin:auto;
+}
 
 
 
