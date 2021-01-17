@@ -19,7 +19,7 @@
 					$("details")[i].removeAttribute("open");
 				}
 			}
-		});
+		}); 
 	});
 </script>
 </head>
