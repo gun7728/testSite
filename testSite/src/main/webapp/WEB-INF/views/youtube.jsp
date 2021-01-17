@@ -31,7 +31,7 @@
 		</section>
 		<section class="y_content">
 	<div>
-	 <h1 class="hnu_text">home > 공지사항 > 유튜브 </h1>
+	 <h1 class="hnu_text">HOME > 공지사항 > 유튜브 </h1>
 	 <h1 class="huu2_text"> Bean's Story의 다양한 컨텐츠를 확인하세요 </h1>
 	 
 	</div>
