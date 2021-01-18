@@ -153,8 +153,8 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fi
 }
 
 .y_textline{
-	border-top:3px solid rgb(177,177,177);
-	width: 2%; 
+	border-top:1px solid rgb(177,177,177);
+	width: 100%; 
 	margin: auto;
 	margin-top : 20px;
 	margin-bottom : 20px;
