@@ -160,6 +160,10 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fi
 	margin-bottom : 20px;
 }
 
+.y_text a {
+	text-decoration: none; 
+	color: gray;
+	}
 
 
 
