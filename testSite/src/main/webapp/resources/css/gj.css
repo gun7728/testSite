@@ -139,10 +139,26 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fi
 }
 
 .youtube_content{
-	border:1px solid green;
 	margin:auto;
 }
 
+.y_text{
+	font-size : 15px;
+	text-align:center;
+}
+.y_text h1{
+		font-size : 20px;
+		text-align:center;
+		margin-top:30px;
+}
+
+.y_textline{
+	border-top:3px solid rgb(177,177,177);
+	width: 2%; 
+	margin: auto;
+	margin-top : 20px;
+	margin-bottom : 20px;
+}
 
 
 
