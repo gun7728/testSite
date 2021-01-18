@@ -19,7 +19,7 @@
 			</div>
 			<div class="list">
 				<ul>
-					<li><a href="index.do">공지사항</a></li>
+					<li><a href="notice.do">공지사항</a></li>
 					<li><a href="event.do">이벤트</a></li>
 					<li><a href="question.do">자주 묻는 질문</a></li>
 				</ul>
@@ -46,6 +46,23 @@
 						src="https://www.youtube.com/embed/wvyV5k2NADY" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
+				</div>
+				<div class="y_text">
+				<h1>언택트 시대의 설 선물법 이디야 선물세트로 따뜻한 마음 전하기</h1><br>
+				만나지 못하지만, 커피와 차로 따뜻한 마음을 전하면 우리 모두 기부니가 매우 조크든요<br>
+				Bean's Story 선물세트로 따뜻한 마음을 안전하게 전해보세요!<br><br>
+				배달앱 및 택배 주문 가능! 1/14 부터 (매장에 따라 상이) 택배 1/20 부터 (전국 매장 가능)<br>
+				<a href="https://youtu.be/iXiVDeN44c4">#Bean's Story</a>
+				<a href="https://youtu.be/Hh0L8Vq7q9A">#Bean's Story 선물</a>
+				<a href="https://youtu.be/0jVwNKGXS7k">#Bean's Story 선물세트</a>
+				<a href="https://youtu.be/luKlni3c7mQ">#커피</a>
+				<a href="https://youtu.be/BKSOl8hIy-0">#얼죽아</a>
+				<a href="https://youtu.be/olnvVImSeaA">#뜨아</a>
+				<a href="https://youtu.be/tRnJqiS_InY">#눈온다</a>
+				</div>
+				<div class = "y_textline"></div>
+
+				
 				</div>
 			</div>
 		</section>

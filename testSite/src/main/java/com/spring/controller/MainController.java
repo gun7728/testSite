@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class MainController {
 	
-	@RequestMapping(value="/index.do",method=RequestMethod.GET)
+	@RequestMapping(value="/notice.do",method=RequestMethod.GET)
 	public String index() {
-		return "index";
+		return "notice";
 	}
 	
 	@RequestMapping(value="/youtube.do",method=RequestMethod.GET)
