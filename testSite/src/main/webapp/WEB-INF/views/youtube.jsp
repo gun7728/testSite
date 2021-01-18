@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Youtube</title>
-<link rel="stylesheet" href="http://localhost:9000/test/css/gj.css">
+<link rel="stylesheet" href="css/gj.css">
 </head>
 <body>
 
