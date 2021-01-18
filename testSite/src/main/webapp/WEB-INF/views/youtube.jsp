@@ -72,6 +72,16 @@
 						<p class="prev"><</p>
 						<p class="next">></p>
 						<div class="y_wrapper">
+						
+						<%--
+			 			<c:forEach var="vo" items="${list}">
+							<div class="post">
+							<a href="${vo.ylink}"> <img src="${vo.yimg}" class="slider_image">
+							<p>${vo.yinfo}</p>
+							</div>
+						</c:forEach> 
+						--%>
+						
 							<div class="post">
 								<a href="https://www.youtube.com/watch?v=iXiVDeN44c4&feature=youtu.be"> <img src="https://i.ytimg.com/vi/iXiVDeN44c4/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLC7vWAz9psdK6znHodxbY7k1_W8dA" class="slider_image">
 									<p>STARBUCKS MUSIC: 년 최고의 스타 벅스 음악 재생 목록! 여름 카페 음악, 일어나, 진정</p>
