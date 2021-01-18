@@ -60,6 +60,7 @@
 				<a href="https://youtu.be/olnvVImSeaA">#뜨아</a>
 				<a href="https://youtu.be/tRnJqiS_InY">#눈온다</a>
 				</div>
+				<div class = "y_textline"></div>
 
 				
 				</div>
