@@ -97,3 +97,15 @@ details p{
 	margin-top : 20px;
 	margin-bottom : 20px;
 }
+
+
+.q_textline {
+	border-top: 1px solid rgb(177, 177, 177);
+	width: 100%;
+	margin: auto;
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+
+
+

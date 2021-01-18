@@ -41,11 +41,15 @@
 				</div>
 				<div class="mline"></div>
 				<div id="map" style="width: 1140px; height: 636px;"></div>
+				
+				<div class="m_textline"></div>
 			</div>
+
 		</section>
 
 
-		
+
+
 
 	</div>
 

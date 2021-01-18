@@ -83,7 +83,7 @@
 				<details>
 					<summary>Q Bean's Story 의미는 무엇인가요?</summary>
 					<div>
-						<p>Bean's Story 그 속에는 심은 대로 거둔다는 믿음이 담겨있습니다</p>
+						<p>Bean's Story 커피콩의 이야기를 커피에 담는다는 의미입니다.</p>
 					</div>
 				</details>
 				<details>
@@ -119,6 +119,9 @@
 						<p>로그아웃은 홈페이지 우측 상단 또는 우측 퀵메뉴의 [로그아웃] 버튼을 클릭하시어 실행하시면 됩니다.</p>
 					</div>
 				</details>
+				
+				<div class="q_textline"></div>
+				
 			</div>
 		</section>
 	</div>

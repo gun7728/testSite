@@ -133,8 +133,8 @@
 
 .y_slider .post p {
 	width: 100%;
-	text-overflow: ellipsis;
-	white-space: nowrap;
+	/* text-overflow: ellipsis; */
+	white-space: nowrap; 
 	overflow: hidden;
 	margin-top: 10px;
 }
@@ -144,3 +144,19 @@
 	color: gray;
 	text-decoration: none;
 }
+
+.y_div {
+ width:100%;	
+ height:40vw;	
+ border:1px solid black;
+}
+
+.y_iframe{	
+ border:1px solid black;
+ width:100%;	
+ height:100%;
+ 
+}
+
+
+

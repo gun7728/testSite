@@ -49,10 +49,12 @@
 				<div class="yline"></div>
 				<div class="youtube_content">
 					<!-- 유튭 -->
-					<iframe width="1140" height="636"
+					<div class="y_div">
+					<iframe class="y_iframe"
 						src="https://www.youtube.com/embed/wvyV5k2NADY" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
+					</div>
 				</div>
 				<div class="y_text">
 					<h1>언택트 시대의 설 선물법 이디야 선물세트로 따뜻한 마음 전하기</h1>
@@ -87,6 +89,8 @@
 									<p>STARBUCKS MUSIC: 년 최고의 스타 벅스 음악 재생 목록! 여름 카페 음악, 일어나, 진정</p>
 								</a>
 							</div>
+							
+							
 							<div class="post">
 								<a href="https://www.youtube.com/watch?v=Hh0L8Vq7q9A&feature=youtu.be"> <img src="https://i.ytimg.com/vi/Hh0L8Vq7q9A/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDEp5O1vfSPspgU0zBhCUkpMpRrHg" class="slider_image">
 									<p>Winter Jazz Cafe Music ♫ ☕ ♫ 편안한 아침 커피 보사 노바 카페 음악 포지티브 데이</p>
