@@ -1,3 +1,48 @@
+.map_content{
+	width:60%;
+	margin:auto;
+	margin-top:50px;
+}
+
+.hnm_text h1{
+	color: #84847c;
+	font-size:15px;
+	 /* float: right;  */
+	 text-align:right;
+	
+}
+
+.hnm2_text {	
+	/*  border: 1px solid red;*/
+	margin-top:70px;
+}
+.hnm2_text h1{
+	color: #A37758;
+	text-align:center; 
+
+}
+
+.mline{
+	border-top:3px solid rgb(177,177,177);
+	width: 2.2%; 
+	margin: auto;
+	margin-top : 20px;
+	margin-bottom : 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .wrap {
 	position: absolute;
 	left: 0;
