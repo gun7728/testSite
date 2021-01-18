@@ -5,7 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Map</title>
-<link rel="stylesheet" href="http://localhost:9000/test/css/gj.css">
+<link rel="stylesheet" href="css/gj.css">
+<link rel="stylesheet" href="css/map.css">
 <script type="text/javascript"
 	src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bcff40663f677af0a69dbdb9951c1630"></script>
 </head>

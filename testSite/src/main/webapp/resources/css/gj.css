@@ -4,10 +4,6 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fi
     padding: 0px;
 }
 
-/**
-	
-*/
-
 #index_content{
 	padding:0;
 	margin:0;
@@ -36,6 +32,7 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fi
 	text-align:center;
 	color:white;
 }
+
 
 .list{
 	position:absolute;
@@ -90,80 +87,18 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fi
 
 
 
-.y_content{
 
-}
 
-.ymain_box{
-/* 	border:1px solid black; */
- 	width: 60%;
-	margin: auto;
-	margin-top:50px;
-}
 
-.hny_text {	
-	/*  border: 1px solid green;*/
-}
 
-.hny2_text {	
-	/*  border: 1px solid red;*/
-	margin-top:70px;
-}
 
-.hny_text h1{
-	color: #84847c;
-	font-size:15px;
-	 /* float: right;  */
-	 text-align:right;
-	
-}
-.hny2_text h1{
-	color: #A37758;
-	text-align:center; 
 
-}
 
-.yline{
-	border-top:3px solid rgb(177,177,177);
-	width: 2.2%; 
-	margin: auto;
-	margin-top : 20px;
-	margin-bottom : 20px;
-}
 
-.notice_content{
-	border-top:5px solid brown;
-	width:60%;
-	margin:auto;
-	margin-top:50px;
-}
 
-.youtube_content{
-	margin:auto;
-}
 
-.y_text{
-	font-size : 15px;
-	text-align:center;
-}
-.y_text h1{
-		font-size : 20px;
-		text-align:center;
-		margin-top:30px;
-}
 
-.y_textline{
-	border-top:1px solid rgb(177,177,177);
-	width: 100%; 
-	margin: auto;
-	margin-top : 20px;
-	margin-bottom : 20px;
-}
 
-.y_text a {
-	text-decoration: none; 
-	color: gray;
-	   } 
 
 
 
@@ -178,201 +113,3 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fi
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/**
-	notice_open
-*/
-
-
-details[open] summary ~ * {
-  animation: open 0.3s ease-in-out;
-}
-
-@keyframes open {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-details summary::-webkit-details-marker {
-  display: none;
-}
-
-details summary {
-  width: 100%;
-  padding: 20px 0 0 0;
-  border-bottom: 1px solid black;
-  position: relative;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: 300;
-  list-style: none;
-  height:50px;
-}
-
-details summary:after {
-  content: "+";
-  color: black;
-  position: absolute;
-  font-size: 1.75rem;
-  line-height: 0;
-  margin-top: 0.75rem;
-  right: 0;
-  font-weight: 200;
-  transform-origin: center;
-  transition: 200ms linear;
-  background-color:light-gray;
-}
-details[open] summary:after {
-  transform: rotate(45deg);
-  font-size: 2rem;
-}
-details summary {
-  outline: 0;
-}
-details p {
-  font-size: 0.95rem;
-  margin:40px 0 40px 100px;
-  padding-top: 1rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/**
-	
-*/
-.wrap {
-	position: absolute;
-	left: 0;
-	bottom: 40px;
-	width: 288px;
-	height: 132px;
-	margin-left: -144px;
-	text-align: left;
-	overflow: hidden;
-	font-size: 12px;
-	font-family: 'Malgun Gothic', dotum, '占쎈즻占쏙옙', sans-serif;
-	line-height: 1.5;
-}
-
-.wrap * {
-	padding: 0;
-	margin: 0;
-}
-
-.wrap .info {
-	width: 286px;
-	height: 120px;
-	border-radius: 5px;
-	border-bottom: 2px solid #ccc;
-	border-right: 1px solid #ccc;
-	overflow: hidden;
-	background: #fff;
-}
-
-.wrap .info:nth-child(1) {
-	border: 0;
-	box-shadow: 0px 1px 2px #888;
-}
-
-.info .title {
-	padding: 5px 0 0 10px;
-	height: 30px;
-	background: #eee;
-	border-bottom: 1px solid #ddd;
-	font-size: 18px;
-	font-weight: bold;
-}
-
-.info .close {
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	color: #888;
-	width: 17px;
-	height: 17px;
-	background:
-		url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');
-}
-
-.info .close:hover {
-	cursor: pointer;
-}
-
-.info .body {
-	position: relative;
-	overflow: hidden;
-}
-
-.info .desc {
-	position: relative;
-	margin: 13px 0 0 90px;
-	height: 75px;
-}
-
-.desc .ellipsis {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
-
-.desc .jibun {
-	font-size: 11px;
-	color: #888;
-	margin-top: -2px;
-}
-
-.info .img {
-	position: absolute;
-	top: 6px;
-	left: 5px;
-	width: 73px;
-	height: 71px;
-	border: 1px solid #ddd;
-	color: #888;
-	overflow: hidden;
-}
-
-.info:after {
-	content: '';
-	position: absolute;
-	margin-left: -12px;
-	left: 50%;
-	bottom: 0;
-	width: 22px;
-	height: 12px;
-	background:
-		url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')
-}
-
-.info .link {
-	color: #5085BB;
-}
-
-.img img {
-	left: 1px;
-	top: 24px;
-	position: absolute;
-}
