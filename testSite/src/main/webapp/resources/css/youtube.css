@@ -147,12 +147,11 @@
 
 .y_div {
  width:100%;	
- height:40vw;	
- border:1px solid black;
+ height:30vw;	
 }
 
 .y_iframe{	
- border:1px solid black;
+ border-radius:20px;
  width:100%;	
  height:100%;
  

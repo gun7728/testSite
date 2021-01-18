@@ -59,8 +59,7 @@
 	<script>
 		var mapContainer = document.getElementById('map'), // 지도의 중심좌표
 		mapOption = {
-			center : new kakao.maps.LatLng(37.31453048172953,
-					127.07029326062046), //지도의 중심좌표.
+			center : new kakao.maps.LatLng(37.499291, 127.033142), //지도의 중심좌표.
 			level : 3
 		// 지도의 확대 레벨
 		};
@@ -75,8 +74,7 @@
 		// 지도에 마커를 표시합니다 
 		var marker = new kakao.maps.Marker({
 			map : map,
-			position : new kakao.maps.LatLng(37.31453048172953,
-					127.07029326062046)
+			position : new kakao.maps.LatLng(37.499291, 127.033142)
 		});
 
 		// 커스텀 오버레이에 표시할 컨텐츠 입니다
@@ -93,8 +91,8 @@
 				+ '				<img src="./resources/images/logo.png" width="70" height="20" />'
 				+ '           </div>'
 				+ '            <div class="desc">'
-				+ '                <div class="ellipsis">경기도 용인시 성복 1로 91</div>'
-				+ '                <div class="jibun ellipsis">(우) 16856 (지번) 성복동 771</div>'
+				+ '                <div class="ellipsis">서울특별시 강남구 역삼동 테헤란로 132</div>'
+				+ '                <div class="jibun ellipsis">(우) 06235 (지번) 역삼동 735-1</div>'
 				+ '                <div><a href="https://www.kakaocorp.com/main" target="_blank" class="link">홈페이지</a></div>'
 				+ '            </div>' + '        </div>' + '    </div>'
 				+ '</div>';
