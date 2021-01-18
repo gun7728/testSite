@@ -21,7 +21,7 @@
 			</div>
 			<div class="list">
 				<ul>
-					<li><a href="index.do" >공지사항</a></li>
+					<li><a href="notice.do" >공지사항</a></li>
 					<li><a href="event.do">이벤트</a></li>
 					<li><a href="question.do">자주 묻는 질문</a></li>
 				</ul>
