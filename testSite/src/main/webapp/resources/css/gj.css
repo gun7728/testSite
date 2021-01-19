@@ -92,11 +92,6 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fi
 
 
 
-.notice_content{
-	width:60%;
-	margin:auto;
-	margin-top:50px;
-}
 
 
 .hnm_text h1{
@@ -116,46 +111,6 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fi
 	text-align:center; 
 
 }
-
-.nline{
-	border-top:3px solid rgb(177,177,177);
-	width: 2.2%; 
-	margin: auto;
-	margin-top : 20px;
-	margin-bottom : 20px;
-}
-
-
-.n_textline {
-	border-top: 1px solid rgb(177, 177, 177);
-	width: 100%;
-	margin: auto;
-	margin-top: 80px;
-	margin-bottom: 40px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

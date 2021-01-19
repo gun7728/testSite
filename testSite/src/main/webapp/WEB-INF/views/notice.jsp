@@ -7,6 +7,7 @@
 <meta charset="UTF-8">
 <title>Notice</title>
 <link rel="stylesheet" href="css/gj.css">
+<link rel="stylesheet" href="css/notice.css">
 </head>
 <body>
 	<div id="index_content">
@@ -31,35 +32,56 @@
 			</div>
 		</section>
 		<section>
-			<div class="notice_content">
+			<div class="notice_list">
+
 				<div class="hnm_text">
-					<h1>HOME > 공지사항 </h1>
+					<h1>HOME > 공지사항</h1>
 				</div>
 				<div class="hnm2_text">
 					<h1>Bean's Story의 공지사항을 확인하세요.</h1>
 				</div>
 				<div class="nline"></div>
-				<div id="map" style="width: 1140px; height: 636px;"></div>
 				
+				<div class="board_top">
+					<div class="board_s">
+						<form method="get" name="search_frm"
+							action="notice_page.jsp">
+							<input type="hidden" name="mode" value="search">
+							<input type="hidden" name="Ctg" value>
+							<select name="kefield" class="scu"> 
+								<option value="subject">제목</option>
+								<option value="content">내용</option>
+							</select>
+							<div class="search_bar">
+								<input type="text" class="sch_txt" name="key" value>
+								<button onclick="bbsSchSub(document.search_frm);"></button>
+							</div>
+						</form>
+					</div>
+
+				</div>
+
+
+
 				<div class="n_textline"></div>
+
 			</div>
 
-		</section>
-	<!-- 공지사항 -->
-	<div class = "notice_content1">
-	<select name ="kefield" class="scu">
-	<option value="subject" selected> 제목</option>
-	<option value="content" > 내용</option>
-	
-	</select>
-	
-	</div>
-	
-	</div>
-	
 
-	
-	
-	
+		</section>
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
 </body>
 </html>
