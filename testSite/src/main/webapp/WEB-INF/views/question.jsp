@@ -51,7 +51,7 @@
 					<h1>HOME > 공지사항 > 자주 묻는 질문</h1>
 				</div>
 				<div class="hnq2_text">
-					<h1>Bean's Story의 다양한 질문들을 확인하세요</h1>
+					<h1>Bean's Story의 다양한 질문들을 확인하세요.</h1>
 				</div>
 				<div class="qline"></div>
 				<%--

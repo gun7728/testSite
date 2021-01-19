@@ -37,7 +37,7 @@
 					<h1>HOME > 공지사항 > 지도</h1>
 				</div>
 				<div class="hnm2_text">
-					<h1>Bean's Story의 매장 위치를 확인하세요</h1>
+					<h1>Bean's Story의 매장 위치를 확인하세요.</h1>
 				</div>
 				<div class="mline"></div>
 				<div id="map" style="width: 1140px; height: 636px;"></div>

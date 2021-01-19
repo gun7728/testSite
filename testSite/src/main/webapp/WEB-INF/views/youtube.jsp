@@ -43,7 +43,7 @@
 					<h1>HOME > 공지사항 > 유튜브</h1>
 				</div>
 				<div class="hny2_text">
-					<h1>Bean's Story의 다양한 컨텐츠를 확인하세요</h1>
+					<h1>Bean's Story의 다양한 컨텐츠를 확인하세요.</h1>
 				</div>
 				<!-- 	</div> -->
 				<div class="yline"></div>

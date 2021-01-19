@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="css/gj.css">
+<link rel="stylesheet" href="css/event.css">
 </head>
 <body>
 	<div id="index_content">
@@ -29,7 +30,21 @@
 				</ul>
 			</div>
 		</section>
+		<section>
+			<div class="event_content">
+				<div class="hnm_text">
+					<h1>HOME > 공지사항 > 이벤트 </h1>
+				</div>
+				<div class="hnm2_text">
+					<h1>Bean's Story의 이벤트를 확인하세요.</h1>
+				</div>
+				<div class="eline"></div>
+				<div id="map" style="width: 1140px; height: 636px;"></div>
+				
+				<div class="e_textline"></div>
+			</div>
 
+		</section>
 	</div>
 </body>
 </html>

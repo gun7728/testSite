@@ -30,8 +30,36 @@
 				</ul>
 			</div>
 		</section>
-		
+		<section>
+			<div class="notice_content">
+				<div class="hnm_text">
+					<h1>HOME > 공지사항 </h1>
+				</div>
+				<div class="hnm2_text">
+					<h1>Bean's Story의 공지사항을 확인하세요.</h1>
+				</div>
+				<div class="nline"></div>
+				<div id="map" style="width: 1140px; height: 636px;"></div>
+				
+				<div class="n_textline"></div>
+			</div>
 
+		</section>
+	<!-- 공지사항 -->
+	<div class = "notice_content1">
+	<select name ="kefield" class="scu">
+	<option value="subject" selected> 제목</option>
+	<option value="content" > 내용</option>
+	
+	</select>
+	
 	</div>
+	
+	</div>
+	
+
+	
+	
+	
 </body>
 </html>
