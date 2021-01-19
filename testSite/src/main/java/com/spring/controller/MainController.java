@@ -30,4 +30,9 @@ public class MainController {
 	public String map() {
 		return "map";
 	}
+	
+	@RequestMapping(value="/notice_page.do",method=RequestMethod.GET)
+	public String notice_page() {
+		return "notice_page";
+	}
 }

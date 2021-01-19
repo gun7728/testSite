@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>notice_page</title>
 <link rel="stylesheet" href="css/notice_page.css">
+<link rel="stylesheet" href="css/gj.css">
 </head>
 <body>
 <div id="index_content">
@@ -35,13 +36,14 @@
 				<div class="hnm_text">
 					<h1>HOME > 공지사항</h1>
 				</div>
-				<div class="hnm2_text">
-					<h1>Bean's Story의 공지사항을 확인하세요.</h1>
-				</div>
+
 				<div class="nline"></div>
-				
+				<div class="hnm_text2">
+					<h1 class="hnm_title">Bean's Story 영업시간 변동 안내</h1>
+					<h1 class="hnm_date">2020-12-15</h1>
+				</div>
 
-
+				<div class="n2line"></div>
 
 				<div class="n_textline"></div>
 

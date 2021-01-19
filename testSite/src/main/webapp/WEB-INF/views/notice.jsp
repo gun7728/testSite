@@ -45,7 +45,7 @@
 				<div class="board_top">
 					<div class="board_s">
 						<form method="get" name="search_frm"
-							action="notice_page.jsp">
+							action="notice.do">
 							<input type="hidden" name="mode" value="search">
 							<input type="hidden" name="Ctg" value>
 							<select name="kefield" class="scu"> 
@@ -61,7 +61,10 @@
 
 				</div>
 			 
-
+				<div class ="notice_pagelist">
+				<a href = "notice_page.do">공지사항 드립니다.</a>
+				
+				</div>
 
 				<div class="n_textline"></div>
 
