@@ -1,16 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Notice</title>
-<link rel="stylesheet" href="css/gj.css">
-<link rel="stylesheet" href="css/notice.css">
+<title>notice_page</title>
+<link rel="stylesheet" href="css/notice_page.css">
 </head>
 <body>
-	<div id="index_content">
+<div id="index_content">
 		<section class="contentWrap">
 			<div class="main_text_field">
 				<h1 class="main_text">공지사항</h1>
@@ -42,45 +40,15 @@
 				</div>
 				<div class="nline"></div>
 				
-				<div class="board_top">
-					<div class="board_s">
-						<form method="get" name="search_frm"
-							action="notice_page.jsp">
-							<input type="hidden" name="mode" value="search">
-							<input type="hidden" name="Ctg" value>
-							<select name="kefield" class="scu"> 
-								<option value="subject">제목</option>
-								<option value="content">내용</option>
-							</select>
-							<div class="search_bar">
-								<input type="text" class="sch_txt" name="key" value>
-								<button onclick="bbsSchSub(document.search_frm);"></button>
-							</div>
-						</form>
-					</div>
 
-				</div>
-			 
 
 
 				<div class="n_textline"></div>
 
 			</div>
 
-
 		</section>
-
-
-
-
 	</div>
-
-
-
-
-
-
-
 
 
 </body>
