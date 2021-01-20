@@ -34,17 +34,17 @@
 					<li><a href="map.do">지도</a></li>
 					<li><a href="youtube.do" class="select_on">유튜브</a></li>
 				</ul>
-			</div>		
-			<a href="https://open.kakao.com/o/smjXAuSc" target="_blank" class="kakao_info">
-				카카오톡 1:1 문의
-				<img class="kakao">
-			</a>
+			</div>
+
 		</section>
 		<section class="y_content">
 			<div class="ymain_box">
 				<!-- 	<div class="ymain_content"> -->
 				<div class="hny_text">
 					<h1>HOME > 공지사항 > 유튜브</h1>
+					<a href="https://open.kakao.com/o/smjXAuSc" target="_blank"
+						class="kakao_info"> 카카오톡 1:1 문의 <img class="kakao">
+					</a>
 				</div>
 				<div class="hny2_text">
 					<h1>Bean's Story의 다양한 컨텐츠를 확인하세요.</h1>
@@ -54,10 +54,10 @@
 				<div class="youtube_content">
 					<!-- 유튭 -->
 					<div class="y_div">
-					<iframe class="y_iframe"
-						src="https://www.youtube.com/embed/wvyV5k2NADY" frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
+						<iframe class="y_iframe"
+							src="https://www.youtube.com/embed/wvyV5k2NADY" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
 					</div>
 				</div>
 				<div class="y_text">
@@ -74,11 +74,11 @@
 						href="https://youtu.be/tRnJqiS_InY">#눈온다</a>
 				</div>
 				<div class="y_textline"></div>
-					<div class="y_slider">
-						<p class="prev"><</p>
-						<p class="next">></p>
-						<div class="y_wrapper">
-						
+				<div class="y_slider">
+					<p class="prev"><</p>
+					<p class="next">></p>
+					<div class="y_wrapper">
+
 						<%--
 			 			<c:forEach var="vo" items="${list}">
 							<div class="post">
@@ -87,31 +87,45 @@
 							</div>
 						</c:forEach> 
 						--%>
-						
-							<div class="post">
-								<a href="https://www.youtube.com/watch?v=iXiVDeN44c4&feature=youtu.be"> <img src="https://i.ytimg.com/vi/iXiVDeN44c4/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLC7vWAz9psdK6znHodxbY7k1_W8dA" class="slider_image">
-									<p>STARBUCKS MUSIC: 년 최고의 스타 벅스 음악 재생 목록! 여름 카페 음악, 일어나, 진정</p>
-								</a>
-							</div>
-							
-							
-							<div class="post">
-								<a href="https://www.youtube.com/watch?v=Hh0L8Vq7q9A&feature=youtu.be"> <img src="https://i.ytimg.com/vi/Hh0L8Vq7q9A/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDEp5O1vfSPspgU0zBhCUkpMpRrHg" class="slider_image">
-									<p>Winter Jazz Cafe Music ♫ ☕ ♫ 편안한 아침 커피 보사 노바 카페 음악 포지티브 데이</p>
-								</a>
-							</div>
-							<div class="post">
-								<a href="https://youtu.be/0jVwNKGXS7k"> <img src="https://i.ytimg.com/vi/0jVwNKGXS7k/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDiDN34exEbpdruqaaJhO9LudMF6A" class="slider_image">
-									<p>[감성 팝송 모음] 카페에서 나올만한 감성 팝송 플레이리스트</p>
-								</a>
-							</div>
-							<div class="post">
-								<a href="https://youtu.be/luKlni3c7mQ"> <img src="https://i.ytimg.com/vi/YlH8Vieni4E/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA4VP9bIElSFEVAr_BNSngay5-Bcg" class="slider_image">
-									<p>공부할때 듣는 카페음악 모음 [motemote│모트모트│𝐒𝐓𝐔𝐃𝐘 𝐌𝐎𝐎𝐃│스터디무드│가사 없는 노래│플레이리스트│Playlist]</p>
-								</a>
-							</div>
+
+						<div class="post">
+							<a
+								href="https://www.youtube.com/watch?v=iXiVDeN44c4&feature=youtu.be">
+								<img
+								src="https://i.ytimg.com/vi/iXiVDeN44c4/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLC7vWAz9psdK6znHodxbY7k1_W8dA"
+								class="slider_image">
+								<p>STARBUCKS MUSIC: 년 최고의 스타 벅스 음악 재생 목록! 여름 카페 음악, 일어나, 진정</p>
+							</a>
+						</div>
+
+
+						<div class="post">
+							<a
+								href="https://www.youtube.com/watch?v=Hh0L8Vq7q9A&feature=youtu.be">
+								<img
+								src="https://i.ytimg.com/vi/Hh0L8Vq7q9A/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDEp5O1vfSPspgU0zBhCUkpMpRrHg"
+								class="slider_image">
+								<p>Winter Jazz Cafe Music ♫ ☕ ♫ 편안한 아침 커피 보사 노바 카페 음악 포지티브
+									데이</p>
+							</a>
+						</div>
+						<div class="post">
+							<a href="https://youtu.be/0jVwNKGXS7k"> <img
+								src="https://i.ytimg.com/vi/0jVwNKGXS7k/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDiDN34exEbpdruqaaJhO9LudMF6A"
+								class="slider_image">
+								<p>[감성 팝송 모음] 카페에서 나올만한 감성 팝송 플레이리스트</p>
+							</a>
+						</div>
+						<div class="post">
+							<a href="https://youtu.be/luKlni3c7mQ"> <img
+								src="https://i.ytimg.com/vi/YlH8Vieni4E/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA4VP9bIElSFEVAr_BNSngay5-Bcg"
+								class="slider_image">
+								<p>공부할때 듣는 카페음악 모음 [motemote│모트모트│𝐒𝐓𝐔𝐃𝐘
+									𝐌𝐎𝐎𝐃│스터디무드│가사 없는 노래│플레이리스트│Playlist]</p>
+							</a>
 						</div>
 					</div>
+				</div>
 
 			</div>
 		</section>

@@ -44,15 +44,15 @@
 					<li><a href="youtube.do">유튜브</a></li>
 				</ul>
 			</div>
-			<a href="https://open.kakao.com/o/smjXAuSc" target="_blank" class="kakao_info">
-				카카오톡 1:1 문의
-				<img class="kakao">
-			</a>
+
 		</section>
 		<section class="content">
 			<div class="question_content">
 				<div class="hnq_text">
 					<h1>HOME > 공지사항 > 자주 묻는 질문</h1>
+					<a href="https://open.kakao.com/o/smjXAuSc" target="_blank"
+						class="kakao_info"> 카카오톡 1:1 문의 <img class="kakao">
+					</a>
 				</div>
 				<div class="hnq2_text">
 					<h1>Bean's Story의 다양한 질문들을 확인하세요.</h1>
@@ -123,9 +123,9 @@
 						<p>로그아웃은 홈페이지 우측 상단 또는 우측 퀵메뉴의 [로그아웃] 버튼을 클릭하시어 실행하시면 됩니다.</p>
 					</div>
 				</details>
-				
+
 				<div class="q_textline"></div>
-				
+
 			</div>
 		</section>
 	</div>

@@ -30,29 +30,28 @@
 					<li><a href="youtube.do">유튜브</a></li>
 				</ul>
 			</div>
-			<a href="https://open.kakao.com/o/smjXAuSc" target="_blank" class="kakao_info">
-				카카오톡 1:1 문의
-				<img class="kakao">
-			</a>
+
 		</section>
 		<section>
 			<div class="notice_list">
 
 				<div class="hnm_text">
 					<h1>HOME > 공지사항</h1>
+					<a href="https://open.kakao.com/o/smjXAuSc" target="_blank"
+						class="kakao_info"> 카카오톡 1:1 문의 <img class="kakao">
+					</a>
 				</div>
 				<div class="hnm2_text">
 					<h1>Bean's Story의 공지사항을 확인하세요.</h1>
 				</div>
 				<div class="nline"></div>
-				
+
 				<div class="board_top">
 					<div class="board_s">
-						<form method="get" name="search_frm"
-							action="notice.do">
-							<input type="hidden" name="mode" value="search">
-							<input type="hidden" name="Ctg" value>
-							<select name="kefield" class="scu"> 
+						<form method="get" name="search_frm" action="notice.do">
+							<input type="hidden" name="mode" value="search"> <input
+								type="hidden" name="Ctg" value> <select name="kefield"
+								class="scu">
 								<option value="subject">제목</option>
 								<option value="content">내용</option>
 							</select>
@@ -65,8 +64,8 @@
 
 				</div>
 				<ul class="n_board">
-				
-				<%--
+
+					<%--
  			<c:forEach var="vo" items="${list}">
 				<li>
 				
@@ -94,8 +93,7 @@
 
 					<li>
 						<div class="n_img_board">
-							<a href=""> <img 
-							src="image/notices.png">
+							<a href=""> <img src="image/notices.png">
 							</a>
 						</div>
 						<div class="n_content_board">
@@ -111,40 +109,25 @@
 							<span class="nend">종료</span>
 						</div>
 					</li>
-					
+
 				</ul>
-				
-				
-				
-				
-				
-				
-<!-- 			 	<div class="n_textline1">			
+
+
+
+
+
+
+				<!-- 			 	<div class="n_textline1">			
 			 	<div class ="notice_pagelist">
 				<a href = "notice_page.do">공지사항 드립니다.</a>
 				</div> -->
-	
-				
-				</div>
 
-				<div class="n_textline"></div>
 
 			</div>
 
-
-		</section>
-
-
-
-
+			<div class="n_textline"></div>
+				</section>
 	</div>
-
-
-
-
-
-
-
 
 
 </body>

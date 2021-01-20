@@ -30,30 +30,32 @@
 					<li><a href="youtube.do">유튜브</a></li>
 				</ul>
 			</div>
-			<a href="https://open.kakao.com/o/smjXAuSc" target="_blank" class="kakao_info">
-				카카오톡 1:1 문의
-				<img class="kakao">
-			</a>
+
 		</section>
 		<section>
 			<div class="map_content">
 				<div class="hnm_text">
 					<h1>HOME > 공지사항 > 지도</h1>
+					<a href="https://open.kakao.com/o/smjXAuSc" target="_blank"
+						class="kakao_info"> 카카오톡 1:1 문의 <img class="kakao">
+					</a>
 				</div>
 				<div class="hnm2_text">
 					<h1>Bean's Story의 매장 위치를 확인하세요.</h1>
 				</div>
 				<div class="mline"></div>
 				<div id="map"></div>
-				
+
 				<div class="root">
 					<h1>역삼역에서 오시는 길</h1>
-					<span>지하철 2호선 역삼역 3번 출구로 나오셔서 직진하시면 한독 빌딩에서 Bean's Story를 만나실 수 있습니다.</span>
+					<span>지하철 2호선 역삼역 3번 출구로 나오셔서 직진하시면 한독 빌딩에서 Bean's Story를
+						만나실 수 있습니다.</span>
 					<h1>강남역에서 오시는 길</h1>
-					<span>지하철 2호선 강남역 1번 출구로 나오셔서 직진하시면 한독 빌딩에서 Bean's Story를 만나실 수 있습니다.</span>
+					<span>지하철 2호선 강남역 1번 출구로 나오셔서 직진하시면 한독 빌딩에서 Bean's Story를
+						만나실 수 있습니다.</span>
 				</div>
-				
-				
+
+
 				<div class="m_textline"></div>
 			</div>
 
