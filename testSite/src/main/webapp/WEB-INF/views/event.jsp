@@ -29,16 +29,16 @@
 					<li><a href="youtube.do">유튜브</a></li>
 				</ul>
 			</div>
-			<a href="https://open.kakao.com/o/smjXAuSc" target="_blank" class="kakao_info">
-				카카오톡 1:1 문의
-				<img class="kakao">
-			</a>
+
 		</section>
 
 		<section>
 			<div class="event_content">
 				<div class="hnm_text">
 					<h1>HOME > 공지사항 > 이벤트</h1>
+					<a href="https://open.kakao.com/o/smjXAuSc" target="_blank"
+						class="kakao_info"> 카카오톡 1:1 문의 <img class="kakao">
+					</a>
 				</div>
 				<div class="hnm2_text">
 					<h1>Bean's Story의 이벤트를 확인하세요.</h1>
@@ -49,7 +49,7 @@
 
 				<ul class="e_board">
 
-<%--
+					<%--
  			<c:forEach var="vo" items="${list}">
 				<li>
 				
@@ -77,8 +77,8 @@
 
 					<li>
 						<div class="e_img_board">
-							<a href=""> 
-							<img src="https://ediya.com/files/bbs_event/IMG_1600761487555.thumb">
+							<a href=""> <img
+								src="https://ediya.com/files/bbs_event/IMG_1600761487555.thumb">
 							</a>
 						</div>
 						<div class="e_content_board">
@@ -94,7 +94,7 @@
 							<span class="end">종료</span>
 						</div>
 					</li>
-					
+
 				</ul>
 				<div class="e_textline"></div>
 			</div>
