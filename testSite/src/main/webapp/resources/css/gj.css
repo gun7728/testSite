@@ -7,6 +7,7 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fi
 }
 
 
+
 #index_content{
 	padding:0;
 	margin:0;
@@ -111,8 +112,25 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fi
 	text-align:center; 
 
 }
+.kakao_info{
+	position:absolute;
+	top: 58%;
+    right: 21.8%;	
+    text-decoration:none;
+    color: #84847c;
+    font-weight:bold;
+}
 
-
+.kakao {
+	width: 30px;
+	height: 30px;
+	background: url("http://localhost:9000/test/images/kakao3.png") center
+		center/cover no-repeat;
+	border-radius: 20px;
+	position:absolute;
+	top: -44%;
+    right: -28%;
+}
 
 
 

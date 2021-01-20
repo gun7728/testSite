@@ -29,6 +29,10 @@
 					<li><a href="youtube.do">유튜브</a></li>
 				</ul>
 			</div>
+			<a href="https://open.kakao.com/o/smjXAuSc" target="_blank" class="kakao_info">
+				카카오톡 1:1 문의
+				<img class="kakao">
+			</a>
 		</section>
 
 		<section>
