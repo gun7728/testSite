@@ -44,10 +44,7 @@
 				<div class="hnm2_text">
 					<h1>Bean's Story의 공지사항을 확인하세요.</h1>
 				</div>
-				<div class="nline"></div>
-
-				<div class="board_top">
-					<div class="board_s">
+								<div class="board_s">
 						<form method="get" name="search_frm" action="notice.do">
 							<input type="hidden" name="mode" value="search"> <input
 								type="hidden" name="Ctg" value> <select name="kefield"
@@ -61,6 +58,10 @@
 							</div>
 						</form>
 					</div>
+<!-- 				<div class="nline"></div> -->
+
+				<div class="board_top">
+	
 
 				</div>
 				<ul class="n_board">
@@ -92,22 +93,25 @@
 --%>
 
 					<li>
+								<h1 class="n_date">2020-12-15</h1>
 						<div class="n_img_board">
 							<a href=""> <img src="images/notices.png">
 							</a>
+							
 						</div>
 						<div class="n_content_board">
 							<dt>
-								<a href="">2021년 설 선물세트</a>
+								<a href="notice_page.do">Bean's Story 영업시간 변경 안내</a><br>
 							</dt>
 							<dd>
-								<span class="nbrown_txt">기간 : </span> 2021년 01월 14 ~ 2021년 01월
-								18일
+					<span class="ngray_txt">안녕하세요! Bean's Story입니다. 2020-12-25일부터 Bean's Story의 </span> 
+						
 							</dd>
+					
 						</div>
-						<div class="n_state_board">
+<!-- 						<div class="n_state_board">
 							<span class="nend">종료</span>
-						</div>
+						</div> -->
 					</li>
 
 				</ul>

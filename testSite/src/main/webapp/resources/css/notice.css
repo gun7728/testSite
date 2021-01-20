@@ -72,6 +72,7 @@
     max-width: 325px;
     float: right;
     overflow: hidden;
+    margin-top: 30px;
 }
 
 
@@ -122,6 +123,7 @@ option {
 .n_board {
 	list-style-type: none;
 	border-top: 2px solid #84847c;
+	margin-top: 90px;
 }
 
 .n_board li {
@@ -137,12 +139,15 @@ option {
     margin-right: 40px;
     float: left;
     /* margin-bottom: 0px; */
-    background: #999;
+    /* background: #999; */
+    
 }
 
 
 .n_img_board img {
 	width: 100%;
+	margin-top: 33px;
+	margin-left: 15px;
 }
 
 .n_content_board {
@@ -159,11 +164,14 @@ option {
 	text-overflow: ellipsis;
 	font-weight: 500;
 	color: #202023;
+	margin-top: 20px;
 }
 
 .n_content_board a {
     font-weight: bold;
     text-decoration: none;
+        color: black;
+    font-size: 25px;
 }
 
 
@@ -172,6 +180,7 @@ option {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	margin-top: 20px;
 }
 
 .n_state_board {
@@ -191,9 +200,18 @@ option {
 	display:inline-block;
 }
 
-.nbrown_txt {
-	color: #A37758;
+.ngray_txt {
+	color: gray;
+	font-size: 12px;
 }
 
+.n_date{
+	float:right;
+	margin-top:50px;
+	width:20%;
+	color: gray;
+	text-align:right; 
+	font-size:15px;
+}
 
 
