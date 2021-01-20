@@ -56,8 +56,32 @@
 				
 				</div>
 				
-				<div class="n_textline"></div>
+				<div class="n_textline">
+				<div class="np_list">
+				<a href="http://localhost:9000/test/notice.do">목록보기</a>
+				</div>
+				</div>
+				
 
+				
+				<div class="n_textline2"></div>	
+				
+				<div class="pagelist">
+				<h1 class="npagelist">이전글 | </h1>
+				<a href="http://localhost:9000/test/notice.do">2020 Bean's Story 가을 행사 </a>				
+				<h1 class="npagedate">2020-10-04</h1>
+				</div>
+							
+				<div class="n_textline3"></div>
+				
+				<div class="pagelist2">
+				<h1 class="npagelist2">다음글 | </h1>
+				<a href="http://localhost:9000/test/notice.do">2020 Bean's Story 봄 행사 </a>
+				<h1 class="npagedate2">2020-03-02</h1>
+				</div>
+								
+				<div class="n_textline4"></div>				
+	
 			</div>
 
 		</section>

@@ -59,7 +59,7 @@
 	width: 100%;
 	margin: auto;
 	margin-top: 80px;
-	margin-bottom: 40px;
+	margin-bottom: 70px;
 }
 
 .page_text h1 {
@@ -75,5 +75,81 @@
 	width:80%;
 }
 
+.np_list a {
+    float: right;
+    width: 170px;
+    line-height: 35px;
+    margin-right: 0;
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 16px;
+    color:gray;
+    text-decoration: none;
+}
 
+.n_textline2 {
+	border-top: 1px solid rgb(177, 177, 177);
+	width: 100%;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	
+}.n_textline3 {
+	border-top: 1px solid rgb(177, 177, 177);
+	width: 100%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 
+.n_textline4 {
+	border-top: 1px solid rgb(177, 177, 177);
+	width: 100%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 70px;
+}
+
+.npagelist{
+	display:inline-block;
+	width:6%;
+	font-size:12px;
+	color: gray;
+	margin-left: 20px;
+}
+
+.pagelist a{
+	font-size:12px;
+	color: gray;
+	text-decoration: none;
+}
+.npagedate{
+	float:right;
+	color: gray;
+	text-align:right; 
+	font-size:12px;
+	margin-right: 20px;
+}
+
+.npagelist2{
+	display:inline-block;
+	width:6%;
+	font-size:12px;
+	color: gray;
+	margin-left: 20px;
+}
+
+.pagelist2 a{
+	font-size:12px;
+	color: gray;
+    text-decoration: none;	
+}
+.npagedate2{
+	float:right;
+	color: gray;
+	text-align:right; 
+	font-size:12px;
+    margin-right: 20px;	
+}
