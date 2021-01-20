@@ -43,7 +43,7 @@
 
 
 
-				<ul class="e_board">
+				<ul class="n_board">
 
 <%--
  			<c:forEach var="vo" items="${list}">
@@ -73,8 +73,8 @@
 
 					<li>
 						<div class="e_img_board">
-							<a href=""> <img
-								src="https://ediya.com/files/bbs_event/IMG_1600761487555.thumb">
+							<a href=""> 
+							<img src="https://ediya.com/files/bbs_event/IMG_1600761487555.thumb">
 							</a>
 						</div>
 						<div class="e_content_board">

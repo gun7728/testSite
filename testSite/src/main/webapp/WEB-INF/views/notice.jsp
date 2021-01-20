@@ -60,9 +60,66 @@
 					</div>
 
 				</div>
-			 
-				<div class ="notice_pagelist">
+				<ul class="n_board">
+				
+				<%--
+ 			<c:forEach var="vo" items="${list}">
+				<li>
+				
+					<div class="e_img_board>
+						<a href="${vo.board_link}">
+							<img src="${vo.board_link}">
+						</a>
+					</div>
+					
+					<div class="e_content_board">
+						<dt>
+							<a href="${vo.board_link}">${vo.board_title}</a>
+						</dt>
+						<dd>
+							<span class="brown_txt">기간 : </span>${vo.board_term}
+						</dd>
+					</div>
+					
+					<div class="e_state_board">
+						<span class="end">${vo.board_state}</span>
+					</div>				
+				</li>
+			</c:forEach> 
+--%>
+
+					<li>
+						<div class="n_img_board">
+							<a href=""> <img 
+							src="image/notices.png">
+							</a>
+						</div>
+						<div class="n_content_board">
+							<dt>
+								<a href="">2021년 설 선물세트</a>
+							</dt>
+							<dd>
+								<span class="nbrown_txt">기간 : </span> 2021년 01월 14 ~ 2021년 01월
+								18일
+							</dd>
+						</div>
+						<div class="n_state_board">
+							<span class="nend">종료</span>
+						</div>
+					</li>
+					
+				</ul>
+				
+				
+				
+				
+				
+				
+<!-- 			 	<div class="n_textline1">			
+			 	<div class ="notice_pagelist">
 				<a href = "notice_page.do">공지사항 드립니다.</a>
+				</div> -->
+	
 				
 				</div>
 
