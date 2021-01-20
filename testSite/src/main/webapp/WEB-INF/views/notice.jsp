@@ -93,7 +93,7 @@
 
 					<li>
 						<div class="n_img_board">
-							<a href=""> <img src="image/notices.png">
+							<a href=""> <img src="images/notices.png">
 							</a>
 						</div>
 						<div class="n_content_board">

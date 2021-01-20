@@ -132,12 +132,12 @@ option {
 }
 
 .n_img_board {
-	width: 500px;
-	height: 135px;
-	margin-right: 40px;
-	float: left;
-	margin-bottom: 10px;
-	background: #999;
+    width: 60px;
+    height: 130px;
+    margin-right: 40px;
+    float: left;
+    /* margin-bottom: 0px; */
+    background: #999;
 }
 
 
@@ -161,9 +161,11 @@ option {
 	color: #202023;
 }
 
-.n_content_board a{
-	font-weight:bold;
+.n_content_board a {
+    font-weight: bold;
+    text-decoration: none;
 }
+
 
 
 .n_content_board dd {
