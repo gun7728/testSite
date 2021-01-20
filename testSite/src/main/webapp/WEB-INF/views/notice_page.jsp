@@ -50,7 +50,10 @@
 				2020-12-25일부터 Bean's Story의 영업시간이 변경되오니 참고부탁드립니다.<br>
 				감사합니다.<br><br><br><br>
 				</h1>
-				<img src="images/noticepage.PNG" width="809" height="809" magin="auto">
+				<div class="page_img">
+					<img src="images/noticepage.PNG" >
+				</div>
+				
 				</div>
 				
 				<div class="n_textline"></div>

@@ -67,4 +67,13 @@
 	color: gray;
 }
 
+.page_img {
+	text-align:center;
+}
+
+.page_img img{
+	width:80%;
+}
+
+
 
