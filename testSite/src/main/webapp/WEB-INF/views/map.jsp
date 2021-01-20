@@ -40,7 +40,15 @@
 					<h1>Bean's Story의 매장 위치를 확인하세요.</h1>
 				</div>
 				<div class="mline"></div>
-				<div id="map" style="width: 1140px; height: 636px;"></div>
+				<div id="map"></div>
+				
+				<div class="root">
+					<h1>역삼역에서 오시는 길</h1>
+					<span>지하철 2호선 역삼역 3번 출구로 나오셔서 직진하시면 한독 빌딩에서 Bean's Story를 만나실 수 있습니다.</span>
+					<h1>강남역에서 오시는 길</h1>
+					<span>지하철 2호선 강남역 1번 출구로 나오셔서 직진하시면 한독 빌딩에서 Bean's Story를 만나실 수 있습니다.</span>
+				</div>
+				
 				
 				<div class="m_textline"></div>
 			</div>
