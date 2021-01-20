@@ -8,31 +8,31 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class MainController {
 	
 	@RequestMapping(value="/notice.do",method=RequestMethod.GET)
-	public String index() {
+	public String notice() {
 		return "notice";
 	}
 	
-	@RequestMapping(value="/youtube.do",method=RequestMethod.GET)
-	public String youtube() {
-		return "youtube";
-	}
 	@RequestMapping(value="/event.do",method=RequestMethod.GET)
 	public String event() {
 		return "event";
 	}
-	
 	@RequestMapping(value="/question.do",method=RequestMethod.GET)
 	public String question() {
 		return "question";
 	}
-	
 	@RequestMapping(value="/map.do",method=RequestMethod.GET)
 	public String map() {
 		return "map";
 	}
-	
+	@RequestMapping(value="/youtube.do",method=RequestMethod.GET)
+	public String youtube() {
+		return "youtube";
+	}
 	@RequestMapping(value="/notice_page.do",method=RequestMethod.GET)
 	public String notice_page() {
 		return "notice_page";
 	}
+
+	
+	
 }
