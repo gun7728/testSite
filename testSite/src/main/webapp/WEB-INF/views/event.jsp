@@ -68,7 +68,16 @@
 					</div>
 					
 					<div class="e_state_board">
-						<span class="end">종료</span>
+						<span class="end${vo.eend}">
+							<c:choose>
+								<c:when test="${vo.eend eq 0}">
+								    진행
+								</c:when>
+								<c:when test="${vo.eend eq 1}">
+								    종료
+								</c:when>
+							</c:choose>
+						</span>
 					</div>				
 				</li>
 			</c:forEach> 

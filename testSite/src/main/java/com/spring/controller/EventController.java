@@ -16,7 +16,6 @@ public class EventController {
 
 	@RequestMapping(value="/event.do",method=RequestMethod.GET)
 	public ModelAndView event() {
-		System.out.println((ModelAndView)eventService.getList());
 		return (ModelAndView)eventService.getList();
 	}
 	

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,7 +49,16 @@
 				</div>
 				
 				<div class="e_state_board">
-							<span class="end">종료</span>
+							<span class="end${vo.eend}">
+								<c:choose>
+								<c:when test="${vo.eend eq 0}">
+								    진행
+								</c:when>
+								<c:when test="${vo.eend eq 1}">
+								    종료
+								</c:when>
+							</c:choose>
+							</span>
 				</div>
 
 				<div class="e2line"></div>

@@ -104,7 +104,7 @@ public class TestEventDAO extends DBConn{
 		
 		try {
 			String sql = "select eid,etitle, econtent "
-					+ ",to_char(edate,'yyyy.mm.dd'),to_char(edate2,'yyyy.mm.dd'),ehits, efile, esfile, efile_t, esfile_t " + 
+					+ ",to_char(edate,'yyyy.mm.dd'),to_char(edate2,'yyyy.mm.dd'),ehits, efile, esfile, efile_t, esfile_t, eend " + 
 					" from TESTEVENT where eid=?";
 			
 			getPreparedStatement(sql);
@@ -121,6 +121,7 @@ public class TestEventDAO extends DBConn{
 				vo.setEsfile(rs.getString(8));
 				vo.setEfile_t(rs.getString(9));
 				vo.setEsfile_t(rs.getString(10));
+				vo.setEend(rs.getInt(11));
 			}
 			
 		} catch (Exception e) {
@@ -138,7 +139,7 @@ public class TestEventDAO extends DBConn{
 		ArrayList<TestEventVO> list = new ArrayList<TestEventVO>();
 		
 		try {
-			String sql = "select * from (select rownum rno, eid, etitle, to_char(edate,'yyyy.mm.dd'), to_char(edate2,'yyyy.mm.dd'), ehits" + 
+			String sql = "select * from (select rownum rno, eid, etitle, to_char(edate,'yyyy.mm.dd'), to_char(edate2,'yyyy.mm.dd'), ehits, eend" + 
 					" from (select * from TESTEVENT order by edate desc)) "
 					+ " where rno between ? and ?";
 			
@@ -155,6 +156,7 @@ public class TestEventDAO extends DBConn{
 				vo.setEdate(rs.getString(4));
 				vo.setEdate2(rs.getString(5));
 				vo.setEhits(rs.getInt(6));
+				vo.setEend(rs.getInt(7));
 				
 				list.add(vo);
 			}
@@ -173,7 +175,7 @@ public class TestEventDAO extends DBConn{
 		ArrayList<TestEventVO> list = new ArrayList<TestEventVO>();
 		
 		try {
-			String sql = "select rownum rno, eid, etitle, to_char(edate,'yyyy.mm.dd'), to_char(edate2,'yyyy.mm.dd'), ehits" + 
+			String sql = "select rownum rno, eid, etitle, to_char(edate,'yyyy.mm.dd'), to_char(edate2,'yyyy.mm.dd'), ehits, eend" + 
 					" from (select * from TESTEVENT order by edate desc)";
 			getPreparedStatement(sql);
 			ResultSet rs = pstmt.executeQuery();
@@ -185,6 +187,8 @@ public class TestEventDAO extends DBConn{
 				vo.setEdate(rs.getString(4));
 				vo.setEdate2(rs.getString(5));
 				vo.setEhits(rs.getInt(6));
+				vo.setEend(rs.getInt(7));
+				
 				list.add(vo);
 			}
 		} catch (Exception e) {
@@ -201,7 +205,7 @@ public class TestEventDAO extends DBConn{
 		
 		try {
 			String sql = "insert into TESTEVENT "
-				+ " values('n_'||sequ_TESTEVENT.nextval,?,?,?,?,?,?,sysdate,?,0)";
+				+ " values('n_'||sequ_TESTEVENT.nextval,?,?,?,?,?,?,sysdate,?,0,?)";
 			
 			getPreparedStatement(sql);
 			pstmt.setString(1, vo.getEtitle());
@@ -211,6 +215,7 @@ public class TestEventDAO extends DBConn{
 			pstmt.setString(5, vo.getEfile_t());
 			pstmt.setString(6, vo.getEsfile_t());
 			pstmt.setString(7, vo.getEdate2());
+			pstmt.setInt(8, vo.getEend());
 			
 			int val = pstmt.executeUpdate();
 			if(val != 0) result = true;			

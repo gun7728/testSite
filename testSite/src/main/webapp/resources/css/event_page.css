@@ -38,7 +38,7 @@
 	float: right;
 }
 
-.e_state_board .end {
+.e_state_board .end1 {
 	width: 100px;
 	line-height: 30px;
 	border-radius: 15px;
@@ -46,6 +46,17 @@
 	text-align: center;
 	font-weight: 500;
 	background: #898989;
+	margin-right: 0;
+	display:inline-block;
+}
+.e_state_board .end0 {
+	width: 100px;
+	line-height: 30px;
+	border-radius: 15px;
+	color: #fff;
+	text-align: center;
+	font-weight: 500;
+	background: #ff0000;
 	margin-right: 0;
 	display:inline-block;
 }
