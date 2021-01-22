@@ -49,41 +49,40 @@
 
 				<ul class="e_board">
 
-					<%--
  			<c:forEach var="vo" items="${list}">
 				<li>
-				
-					<div class="e_img_board>
-						<a href="${vo.board_link}">
-							<img src="${vo.board_link}">
+
+					<div class="e_img_board">
+						<a href="event_page.do?id=${vo.eid}">
+							<img src="${vo.esfile_t}">
 						</a>
 					</div>
 					
 					<div class="e_content_board">
 						<dt>
-							<a href="${vo.board_link}">${vo.board_title}</a>
+							<a href="event_page.do?id=${vo.eid}">${vo.etitle}</a>
 						</dt>
 						<dd>
-							<span class="brown_txt">기간 : </span>${vo.board_term}
+							<span class="brown_txt">기간 : </span>${vo.edate} ~ ${vo.edate2}
 						</dd>
 					</div>
 					
 					<div class="e_state_board">
-						<span class="end">${vo.board_state}</span>
+						<span class="end">종료</span>
 					</div>				
 				</li>
 			</c:forEach> 
---%>
 
+<!-- 
 					<li>
 						<div class="e_img_board">
-							<a href=""> <img
-								src="https://ediya.com/files/bbs_event/IMG_1600761487555.thumb">
+							<a href="event_page.do"> <img
+								src="images/event_thum.png">
 							</a>
 						</div>
 						<div class="e_content_board">
 							<dt>
-								<a href="">2021년 설 선물세트</a>
+								<a href="event_page.do">2021년 설 선물세트</a>
 							</dt>
 							<dd>
 								<span class="brown_txt">기간 : </span> 2021년 01월 14 ~ 2021년 01월
@@ -94,7 +93,7 @@
 							<span class="end">종료</span>
 						</div>
 					</li>
-
+ -->
 				</ul>
 				<div class="e_textline"></div>
 			</div>

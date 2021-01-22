@@ -95,7 +95,7 @@
 					<li>
 								<h1 class="n_date">2020-12-15</h1>
 						<div class="n_img_board">
-							<a href=""> <img src="images/notices.png">
+							<a href="notice_page.do"> <img src="images/notices.png">
 							</a>
 							
 						</div>

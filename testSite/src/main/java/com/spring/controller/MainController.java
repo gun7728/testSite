@@ -12,10 +12,6 @@ public class MainController {
 		return "notice";
 	}
 	
-	@RequestMapping(value="/event.do",method=RequestMethod.GET)
-	public String event() {
-		return "event";
-	}
 	@RequestMapping(value="/question.do",method=RequestMethod.GET)
 	public String question() {
 		return "question";
