@@ -1,5 +1,7 @@
 package com.spring.controller;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -7,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.spring.service.EventService;
+import com.test.vo.TestEventVO;
 
 @Controller
 public class EventController {
@@ -23,4 +26,18 @@ public class EventController {
 	public ModelAndView event_page(String id) {
 		return (ModelAndView)eventService.getContent(id);
 	}
+	
+
+	@RequestMapping(value = "/event_write.do", method = RequestMethod.GET)
+	public String board_write(){
+		return "event_write";
+	}
+	
+	@RequestMapping(value = "/event_write_proc.do", method = RequestMethod.POST)
+	public ModelAndView event_write_proc(TestEventVO vo,HttpServletRequest request){
+		return (ModelAndView)eventService.getResultWrite(vo,request);
+	}
+	
+	
 }
+

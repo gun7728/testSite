@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>notice_page</title>
-<link rel="stylesheet" href="css/event_page.css">
+<link rel="stylesheet" href="css/event_write.css">
 <link rel="stylesheet" href="css/gj.css">
+<script src="http://localhost:9000/MyCGV/js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
 	<div id="index_content">
@@ -41,9 +41,55 @@
 					</a>
 				</div>
 
-
 				<div class="eline"></div>
-				<div class="event_text2">
+				<div>
+					<form name="event_write_form"  action="event_write_proc.do" method="post" 
+						 class="event_write" enctype="multipart/form-data">				
+						<ul>
+							<li>
+								<label>제목</label>
+								<input type="text" name="etitle" id="etitle">
+							</li>
+							<li>
+								<label>시작</label>
+								<input type="date" name="edate" id="edate" min="0000" max="9999">
+							</li>
+							<li>
+								<label>종료</label>
+								<input type="date" name="edate2" id="edate2" min="0000" max="9999">
+							</li>
+							<li>
+								<label>내용</label>
+								<textarea name="econtent"></textarea>
+							</li>
+							<li>
+								<label>썸네일</label>
+								<input type="file" name="file1">
+							</li>
+							<li>
+								<label>이미지</label>
+								<input type="file" name="file2">
+							</li>
+							<li>
+								<label>이벤트 설정</label>
+								<input type="text" name="eend" placeholder='(0:진행 / 1:종료)'>
+							</li>
+							<li>
+								<button type="submit" class="btn_style" id="btnEventWrite">등록</button>
+								<button type="reset" class="btn_style">취소</button>							
+							</li>
+						</ul>
+					</form>
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				<%-- <div class="event_text2">
 					<h1 class="event_title">${vo.etitle}</h1>
 					<h1 class="event_date">기간 : ${vo.edate } ~ ${vo.edate2 }</h1>
 				</div>
@@ -68,10 +114,10 @@
 					${vo.econtent }
 					</h1>
 					<div class="event_page_img">
-						<img src="upload/${vo.esfile}">
+						<img src="images/${vo.esfile}">
 					</div>
 
-				</div>
+				</div> --%>
 
 				<div class="e_textline">
 					<div class="ep_list">

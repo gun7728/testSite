@@ -2,8 +2,6 @@ package com.spring.service;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.springframework.web.servlet.ModelAndView;
-
 public interface EventService {
 	Object getList();
 	Object getContent(String id);
