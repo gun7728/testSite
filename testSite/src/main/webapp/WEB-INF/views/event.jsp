@@ -15,13 +15,13 @@
 			<div class="main_text_field">
 				<h1 class="main_text">이벤트</h1>
 				<p class="sub_text">
-					<span>Bean's Story</span> <br>이벤트 작성
+					<span>Bean's Story의 다양한 이벤트를</span> <br>만나보세요
 				</p>
 			</div>
 			<div class="list">
 				<ul>
 					<li><a href="notice.do">공지사항</a></li>
-					<li><a href="event.do">이벤트</a></li>
+					<li><a href="event.do" class="select_on">이벤트</a></li>
 					<li><a href="question.do">자주 묻는 질문</a></li>
 				</ul>
 				<ul>
