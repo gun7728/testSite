@@ -18,8 +18,8 @@ public class EventController {
 	private EventService eventService;
 
 	@RequestMapping(value="/event.do",method=RequestMethod.GET)
-	public ModelAndView event() {
-		return (ModelAndView)eventService.getList();
+	public ModelAndView event(String rpage) {
+		return eventService.getList(rpage);
 	}
 	
 	@RequestMapping(value="/event_page.do",method=RequestMethod.GET)

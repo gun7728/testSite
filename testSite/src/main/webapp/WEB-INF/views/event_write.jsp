@@ -7,7 +7,7 @@
 <title>notice_page</title>
 <link rel="stylesheet" href="css/event_write.css">
 <link rel="stylesheet" href="css/gj.css">
-<script src="http://localhost:9000/MyCGV/js/jquery-3.5.1.min.js"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
 	<div id="index_content">

@@ -8,6 +8,37 @@
 <title>Insert title here</title>
 <link rel="stylesheet" href="css/gj.css">
 <link rel="stylesheet" href="css/event.css">
+<link rel="stylesheet" href = "css/am-pagination.css">
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/am-pagination.js"></script>  
+<script>
+	$(document).ready(function(){
+		
+		//페이지 번호 및 링크 		
+		var pager = jQuery("#ampaginationsm").pagination({
+			maxSize : 5,			
+			totals:'${dbCount}',
+			page : '${reqPage}',
+			pageSize : '${pageSize}',
+					
+			
+			lastText : '&raquo;&raquo;',
+			firstText : '&laquo;&laquo',
+			prevTest : '&laquo;',
+			nextTest : '&raquo;',
+			
+			btnSize : 'sm' 			
+		}); 
+		
+		//
+		jQuery("#ampaginationsm").on('am.pagination.change',function(e){
+			$(location).attr('href','http://localhost:9000/test/event.do?rpage='+e.page);  
+			//location.href('이동페이지');
+		});
+		
+	});
+	
+</script>
 </head>
 <body>
 	<div id="index_content">
@@ -82,7 +113,7 @@
 					</div>				
 				</li>
 			</c:forEach> 
-
+			
 <!-- 
 					<li>
 						<div class="e_img_board">
@@ -105,6 +136,9 @@
 					</li>
  -->
 				</ul>
+				
+			<div id="ampaginationsm"></div>
+				
 				<div class="e_textline"></div>
 			</div>
 

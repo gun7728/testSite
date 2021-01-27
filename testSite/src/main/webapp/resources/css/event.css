@@ -39,7 +39,7 @@ a {
 	border-top: 1px solid rgb(177, 177, 177);
 	width: 100%;
 	margin: auto;
-	margin-top: 80px;
+	margin-top: 40px;
 	margin-bottom: 40px;
 }
 
@@ -127,4 +127,9 @@ a {
 
 .brown_txt {
 	color: #A37758;
+}
+
+#ampaginationsm{
+	text-align:center;
+	margin-top:40px;
 }

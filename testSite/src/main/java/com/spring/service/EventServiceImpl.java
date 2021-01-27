@@ -19,10 +19,38 @@ public class EventServiceImpl implements EventService {
 	@Autowired
 	private TestEventDAO eventDAO;
 	
-	public ModelAndView getList() {
+	public ModelAndView getList(String rpage) {
 		ModelAndView mv = new ModelAndView();
-		ArrayList<TestEventVO> list = eventDAO.getList();
+		
+		int start = 0;
+		int end = 0;
+		int pageSize = 5; //�� �������� ��µǴ� row
+		int pageCount = 1; //��ü ������ ��  : ��ü ����Ʈ row /�� �������� ��µǴ� row
+		int dbCount = eventDAO.getListCount(); //DB���� �� ��ü�ο�� ���
+		int reqPage = 1; //��û������
+		
+		//2-2. ��ü������ �� ���ϱ� - ȭ�����
+		if(dbCount % pageSize == 0){
+			pageCount = dbCount/pageSize;		
+		}else{
+			pageCount = dbCount/pageSize +1;
+		}
+		
+		//2-3. start, end �� ���ϱ�
+		if(rpage != null){
+			reqPage = Integer.parseInt(rpage);
+			start = (reqPage-1) * pageSize +1 ;
+			end = reqPage*pageSize;	
+		}else{
+			start = reqPage;
+			end = pageSize;
+		}
+		ArrayList<TestEventVO> list = eventDAO.getList(start,end);
+		
 		mv.addObject("list", list);
+		mv.addObject("dbCount", dbCount);
+		mv.addObject("pageSize", pageSize);
+		mv.addObject("reqPage", reqPage);
 		mv.setViewName("event");
 
 		return mv;

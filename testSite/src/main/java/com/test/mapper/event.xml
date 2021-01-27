@@ -12,12 +12,14 @@
 		select count(*) from TESTEVENT
 	</select>
 	
-	<select id="list" resultType="com.test.vo.TestEventVO">
-	select rownum rno, eid, etitle, 
+	
+	<select id="list" parameterType="map" resultType="com.test.vo.TestEventVO">
+	select * from (select rownum rno, eid, etitle, 
 			to_char(edate,'yyyy.mm.dd') edate, 
 			to_char(edate2,'yyyy.mm.dd') edate2, 
 			ehits, eend, esfile_t efile_t
-	 from (select * from TESTEVENT order by edate desc)
+	 from (select * from TESTEVENT order by edate desc))
+	 where rno between #{start} and #{end}
 	</select>
 
 
@@ -36,5 +38,7 @@
 		  values('n_'||sequ_TESTEVENT.nextval,
 		  #{etitle},#{econtent},#{efile},#{esfile},#{efile_t},#{esfile_t},#{edate},#{edate2},0,#{eend})	
 	</insert>
+	
+	
 	
 </mapper>
