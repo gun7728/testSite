@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.event">
+
+	
+	<!-- event:listcount  -->
+	<select id="listcount" resultType="int">
+		select count(*) from TESTEVENT
+	</select>
+	
+	<select id="list" resultType="com.test.vo.TestEventVO">
+	select rownum rno, eid, etitle, 
+			to_char(edate,'yyyy.mm.dd') edate, 
+			to_char(edate2,'yyyy.mm.dd') edate2, 
+			ehits, eend, esfile_t efile_t
+	 from (select * from TESTEVENT order by edate desc)
+	</select>
+
+
+	<select id="content" parameterType="java.lang.String"
+				resultType="com.test.vo.TestEventVO">
+			select eid,etitle, econtent ,to_char(edate,'yyyy.mm.dd') edate,
+				to_char(edate2,'yyyy.mm.dd') edate2,ehits, efile, 
+				esfile, efile_t, esfile_t, eend 
+		  		 from TESTEVENT where eid=#{nid}
+	</select>
+	
+	
+		<!-- event:insert -->
+	<insert id="insert" parameterType="com.test.vo.TestEventVO">	
+		insert into TESTEVENT 
+		  values('n_'||sequ_TESTEVENT.nextval,
+		  #{etitle},#{econtent},#{efile},#{esfile},#{efile_t},#{esfile_t},#{edate},#{edate2},0,#{eend})	
+	</insert>
+	
+</mapper>

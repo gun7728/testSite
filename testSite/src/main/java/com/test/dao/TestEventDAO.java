@@ -2,28 +2,115 @@ package com.test.dao;
 
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.List;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.test.vo.TestEventVO;
 
 public class TestEventDAO extends DBConn{
+	
+	@Autowired
+	private SqlSessionTemplate sqlSession;
+	
+	private static String namespace = "mapper.event";
+	
 	/**
 	 * ��ü ����Ʈ ī��Ʈ
 	 */
 	public int getListCount() {
-		int result = 0;
+		return sqlSession.selectOne(namespace+".listcount");
+
+		/*
+		 * try { String sql = "select count(*) from TESTEVENT";
+		 * getPreparedStatement(sql); ResultSet rs = pstmt.executeQuery(); if(rs.next())
+		 * result = rs.getInt(1);
+		 * 
+		 * } catch (Exception e) { e.printStackTrace(); }
+		 * 
+		 * return result;
+		 */
+	
+	}
+	
+	
+	
+	
+	public ArrayList<TestEventVO> getList(){
+		List<TestEventVO> list = sqlSession.selectList(namespace+".list");
+		return (ArrayList<TestEventVO>)list;
+		/*
+		 * ArrayList<TestEventVO> list = new ArrayList<TestEventVO>();
+		 * 
+		 * try { String sql =
+		 * "select rownum rno, eid, etitle, to_char(edate,'yyyy.mm.dd'), to_char(edate2,'yyyy.mm.dd'), ehits, eend, esfile_t"
+		 * + " from (select * from TESTEVENT order by edate desc)";
+		 * getPreparedStatement(sql); ResultSet rs = pstmt.executeQuery();
+		 * while(rs.next()) { TestEventVO vo = new TestEventVO();
+		 * vo.setRno(rs.getInt(1)); vo.setEid(rs.getString(2));
+		 * vo.setEtitle(rs.getString(3)); vo.setEdate(rs.getString(4));
+		 * vo.setEdate2(rs.getString(5)); vo.setEhits(rs.getInt(6));
+		 * vo.setEend(rs.getInt(7)); vo.setEfile_t(rs.getString(8));
+		 * 
+		 * list.add(vo); } } catch (Exception e) { e.printStackTrace(); }
+		 * 
+		 * System.out.println(list.get(1).getEfile_t()); return list;
+		 */
+	}
+	
+
+	public TestEventVO getContent(String eid) {
+		TestEventVO vo = new TestEventVO();
 		
-		try {
-			String sql = "select count(*) from TESTEVENT";
-			getPreparedStatement(sql);
-			ResultSet rs = pstmt.executeQuery();
-			if(rs.next()) result = rs.getInt(1);
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+
+		return sqlSession.selectOne(namespace+".content",eid);
 		
+		/*
+		 * try { String sql = "select eid,etitle, econtent " +
+		 * ",to_char(edate,'yyyy.mm.dd'),to_char(edate2,'yyyy.mm.dd'),ehits, efile, esfile, efile_t, esfile_t, eend "
+		 * + " from TESTEVENT where eid=?";
+		 * 
+		 * getPreparedStatement(sql); pstmt.setString(1, nid); ResultSet rs =
+		 * pstmt.executeQuery(); if(rs.next()) { vo.setEid(rs.getString(1));
+		 * vo.setEtitle(rs.getString(2)); vo.setEcontent(rs.getString(3));
+		 * vo.setEdate(rs.getString(4)); vo.setEdate2(rs.getString(5));
+		 * vo.setEhits(rs.getInt(6)); vo.setEfile(rs.getString(7));
+		 * vo.setEsfile(rs.getString(8)); vo.setEfile_t(rs.getString(9));
+		 * vo.setEsfile_t(rs.getString(10)); vo.setEend(rs.getInt(11)); }
+		 * 
+		 * } catch (Exception e) { e.printStackTrace(); }
+		 * 
+		 * return vo;
+		 */
+	}
+	
+	
+	
+	public boolean getInsert(TestEventVO vo) {
+		boolean result = false;
 		
-		return result;
+		int value = sqlSession.insert(namespace+".insert", vo);
+		if(value !=0) result = true;
+		return result;		
+		
+		/*
+		 * try { String sql = "insert into TESTEVENT " +
+		 * " values('n_'||sequ_TESTEVENT.nextval,?,?,?,?,?,?,?,?,0,?)";
+		 * 
+		 * getPreparedStatement(sql); pstmt.setString(1, vo.getEtitle());
+		 * pstmt.setString(2, vo.getEcontent()); pstmt.setString(3, vo.getEfile());
+		 * pstmt.setString(4, vo.getEsfile()); pstmt.setString(5, vo.getEfile_t());
+		 * pstmt.setString(6, vo.getEsfile_t()); pstmt.setString(7, vo.getEdate());
+		 * pstmt.setString(8, vo.getEdate2()); pstmt.setInt(9, vo.getEend());
+		 * 
+		 * int val = pstmt.executeUpdate(); if(val != 0) result = true;
+		 * 
+		 * 
+		 * } catch (Exception e) { e.printStackTrace(); }
+		 *
+		 *	return result;
+		 */
 	}
 	
 	
@@ -96,40 +183,7 @@ public class TestEventDAO extends DBConn{
 	
 	
 	
-	/**
-	 * Select : ������ ���
-	 */
-	public TestEventVO getContent(String nid) {
-		TestEventVO vo = new TestEventVO();
-		
-		try {
-			String sql = "select eid,etitle, econtent "
-					+ ",to_char(edate,'yyyy.mm.dd'),to_char(edate2,'yyyy.mm.dd'),ehits, efile, esfile, efile_t, esfile_t, eend " + 
-					" from TESTEVENT where eid=?";
-			
-			getPreparedStatement(sql);
-			pstmt.setString(1, nid);
-			ResultSet rs = pstmt.executeQuery();
-			if(rs.next()) {
-				vo.setEid(rs.getString(1));
-				vo.setEtitle(rs.getString(2));
-				vo.setEcontent(rs.getString(3));
-				vo.setEdate(rs.getString(4));
-				vo.setEdate2(rs.getString(5));
-				vo.setEhits(rs.getInt(6));
-				vo.setEfile(rs.getString(7));
-				vo.setEsfile(rs.getString(8));
-				vo.setEfile_t(rs.getString(9));
-				vo.setEsfile_t(rs.getString(10));
-				vo.setEend(rs.getInt(11));
-			}
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		
-		return vo;
-	}
+	
 	
 	
 	/**
@@ -168,69 +222,6 @@ public class TestEventDAO extends DBConn{
 		return list;
 	}
 	
-	/**
-	 * Select : ��ü ����Ʈ ��� 
-	 */
-	public ArrayList<TestEventVO> getList(){
-		ArrayList<TestEventVO> list = new ArrayList<TestEventVO>();
-		
-		try {
-			String sql = "select rownum rno, eid, etitle, to_char(edate,'yyyy.mm.dd'), to_char(edate2,'yyyy.mm.dd'), ehits, eend, esfile_t" + 
-					" from (select * from TESTEVENT order by edate desc)";
-			getPreparedStatement(sql);
-			ResultSet rs = pstmt.executeQuery();
-			while(rs.next()) {
-				TestEventVO vo = new TestEventVO();
-				vo.setRno(rs.getInt(1));
-				vo.setEid(rs.getString(2));
-				vo.setEtitle(rs.getString(3));
-				vo.setEdate(rs.getString(4));
-				vo.setEdate2(rs.getString(5));
-				vo.setEhits(rs.getInt(6));
-				vo.setEend(rs.getInt(7));
-				vo.setEfile_t(rs.getString(8));
-				
-				list.add(vo);
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}			
-		
-		System.out.println(list.get(1).getEfile_t());
-		return list;
-	}
-	
-	/**
-	 * Insert : �������� �۾���
-	 */
-	public boolean getInsert(TestEventVO vo) {
-		boolean result = false;
-		
-		try {
-			String sql = "insert into TESTEVENT "
-				+ " values('n_'||sequ_TESTEVENT.nextval,?,?,?,?,?,?,?,?,0,?)";
-			
-			getPreparedStatement(sql);
-			pstmt.setString(1, vo.getEtitle());
-			pstmt.setString(2, vo.getEcontent());
-			pstmt.setString(3, vo.getEfile());
-			pstmt.setString(4, vo.getEsfile());
-			pstmt.setString(5, vo.getEfile_t());
-			pstmt.setString(6, vo.getEsfile_t());
-			pstmt.setString(7, vo.getEdate());
-			pstmt.setString(8, vo.getEdate2());
-			pstmt.setInt(9, vo.getEend());
-			
-			int val = pstmt.executeUpdate();
-			if(val != 0) result = true;			
-			
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		
-		return result;
-	}
 	
 }//class
 
