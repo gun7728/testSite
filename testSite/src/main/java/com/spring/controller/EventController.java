@@ -22,6 +22,11 @@ public class EventController {
 		return eventService.getList(rpage);
 	}
 	
+	@RequestMapping(value="/delete.do",method=RequestMethod.GET)
+	public ModelAndView delete(String eid) {
+		return eventService.getResultDelete(eid);
+	}
+	
 	@RequestMapping(value="/event_page.do",method=RequestMethod.GET)
 	public ModelAndView event_page(String id) {
 		return (ModelAndView)eventService.getContent(id);

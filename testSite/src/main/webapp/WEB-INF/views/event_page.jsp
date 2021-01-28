@@ -8,6 +8,7 @@
 <title>notice_page</title>
 <link rel="stylesheet" href="css/event_page.css">
 <link rel="stylesheet" href="css/gj.css">
+
 </head>
 <body>
 	<div id="index_content">
@@ -43,6 +44,7 @@
 
 
 				<div class="eline"></div>
+				
 				<div class="event_text2">
 					<h1 class="event_title">${vo.etitle}</h1>
 					<h1 class="event_date">기간 : ${vo.edate } ~ ${vo.edate2 }</h1>
@@ -72,6 +74,15 @@
 					</div>
 
 				</div>
+				
+				<div class="e_option">
+					<a href="board_update.do?bid=${vo.eid}"><button type="button" class="btn_style">수정</button></a>
+					
+					<form action="delete.do?eid=${vo.eid}" method="get" onsubmit="return confirm('정말로 삭제하시겠습니까?');">
+						<input type="hidden" name="eid" id="eid" value="${vo.eid}" ><button type="submit" class="btn_style">삭제</button>
+					</form>					
+					
+				</div>
 
 				<div class="e_textline">
 					<div class="ep_list">
@@ -82,24 +93,6 @@
 
 
 				<div class="e_textline2"></div>
-
-				<div class="event_pagelist">
-					<h1 class="epagelist">이전글 |</h1>
-					<a href="http://localhost:9000/test/notice.do">2020 Bean's
-						Story 가을 행사 </a>
-					<h1 class="epagedate">2020-10-04</h1>
-				</div>
-
-				<div class="e_textline3"></div>
-
-				<div class="event_pagelist2">
-					<h1 class="epagelist2">다음글 |</h1>
-					<a href="http://localhost:9000/test/notice.do">2020 Bean's
-						Story 봄 행사 </a>
-					<h1 class="epagedate2">2020-03-02</h1>
-				</div>
-
-				<div class="e_textline4"></div>
 
 			</div>
 

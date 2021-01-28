@@ -73,7 +73,7 @@ $(document).ready(function(){
 							</li>
 							<li>
 								<label>내용</label>
-								<textarea name="econtent" id="econtent"></textarea>
+								<textarea name="econtent" id="econtent" style="margin: 0px; width: 90%; height: 300px;"></textarea>
 							</li>
 							<li>
 								<label>썸네일</label>
@@ -142,24 +142,7 @@ $(document).ready(function(){
 
 				<div class="e_textline2"></div>
 
-				<div class="event_pagelist">
-					<h1 class="epagelist">이전글 |</h1>
-					<a href="http://localhost:9000/test/notice.do">2020 Bean's
-						Story 가을 행사 </a>
-					<h1 class="epagedate">2020-10-04</h1>
-				</div>
-
-				<div class="e_textline3"></div>
-
-				<div class="event_pagelist2">
-					<h1 class="epagelist2">다음글 |</h1>
-					<a href="http://localhost:9000/test/notice.do">2020 Bean's
-						Story 봄 행사 </a>
-					<h1 class="epagedate2">2020-03-02</h1>
-				</div>
-
-				<div class="e_textline4"></div>
-
+				
 			</div>
 
 		</section>

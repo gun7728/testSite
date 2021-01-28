@@ -10,5 +10,5 @@ public interface EventService {
 	Object getResultWrite(Object vo,HttpServletRequest request);
 	Object getUpdate(String id);
 	Object getResultUpdate(Object vo);
-	Object getResultDelete(String id);
+	ModelAndView getResultDelete(String rpage);
 }

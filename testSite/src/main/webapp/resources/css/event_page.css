@@ -177,3 +177,22 @@
 	font-size:12px;
     margin-right: 20px;	
 }
+
+.e_option{    
+    text-align: right;
+}
+
+.e_option button{
+	background:none;
+    float: right;
+    width: 170px;
+    line-height: 35px;
+    margin-right: 0;
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 16px;
+    color: gray;
+    text-decoration: none;
+}

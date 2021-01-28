@@ -141,21 +141,12 @@ public class TestEventDAO extends DBConn {
 	 */
 	public boolean getDelete(String eid) {
 		boolean result = false;
-
-		try {
-			String sql = "delete from TESTEVENT where nid=?";
-			getPreparedStatement(sql);
-			pstmt.setString(1, eid);
-			int val = pstmt.executeUpdate();
-			if (val != 0)
-				result = true;
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
+		int val = sqlSession.delete(namespace+".delete",eid);
+		if(val != 0) result = true;
 		return result;
 	}
+	
+
 
 	/**
 	 * Update : ���� ����

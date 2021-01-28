@@ -117,10 +117,22 @@ public class EventServiceImpl implements EventService {
 		return null;
 	}
 
-	public Object getResultDelete(String id) {
-		// TODO Auto-generated method stub
-		return null;
+	@Override
+	public ModelAndView getResultDelete(String eid) {
+		ModelAndView mv = new ModelAndView();
+		
+		//String bid = request.getParameter("bid");
+		//CgvBoardDAO dao = new CgvBoardDAO();
+		boolean result = eventDAO.getDelete(eid);
+		
+		if(result){
+			mv.setViewName("redirect:/event.do");
+		}else{
+			mv.setViewName("errorPage");
+		}
+		return mv;
 	}
+	
 
 
 

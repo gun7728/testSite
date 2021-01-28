@@ -179,6 +179,9 @@
 	list-style-type: none;
 	margin-bottom: 7px;
 }
+.event_write li:last-child {
+	text-align:center;
+}
 
 .event_write label {
 	border: 1px solid gray;
@@ -211,13 +214,14 @@
 	font-size: 12px;
 }
 
-.event_write button {
-	font-size: 12px;
-	width: 80px;
-	padding: 6px 0;
-	border-radius: 4px;
-	margin: 10px 5px 0 0;
-	text-align: center;
+.event_write button {    
+	font-size: 20px;
+    width: 120px;
+    padding: 6px 0;
+    border-radius: 4px;
+    margin: 50px 5px 0 0;
+    text-align: center;
+    height: 40px;
 }
 
 

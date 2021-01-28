@@ -28,7 +28,7 @@
 			select eid,etitle, econtent ,to_char(edate,'yyyy.mm.dd') edate,
 				to_char(edate2,'yyyy.mm.dd') edate2,ehits, efile, 
 				esfile, efile_t, esfile_t, eend 
-		  		 from TESTEVENT where eid=#{nid}
+		  		 from TESTEVENT where eid=#{eid}
 	</select>
 	
 	
@@ -40,5 +40,9 @@
 	</insert>
 	
 	
+	<!-- event:delete -->
+	<delete id="delete" parameterType="java.lang.String">
+		delete from TESTEVENT where eid=#{eid}
+	</delete>
 	
 </mapper>
