@@ -61,8 +61,8 @@
 .am-pagination-default > .active > span:focus {
   z-index: 3;
   color: #fff;
-  background-color: #5eb95e;
-  border-color: #5eb95e;
+  background-color: #462e2e;
+  border-color: #462e2e;
   cursor: default;
 }
 .am-pagination-default > .disabled > span,
@@ -93,10 +93,10 @@
   border-top-right-radius: 6px;
 }
 .am-pagination-default-sm > li > a,
-.am-pagination-default-sm > li > span {
-  padding: 5px 10px;
-  font-size: 12px;
-  line-height: 1.5;
+.am-pagination-default-sm > li > span {    
+	padding: 7px 20px;
+    font-size: 15px;
+    line-height: 1.5;
 }
 .am-pagination-default-sm > li:first-child > a,
 .am-pagination-default-sm > li:first-child > span {
