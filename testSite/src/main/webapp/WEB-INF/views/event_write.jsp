@@ -8,6 +8,19 @@
 <link rel="stylesheet" href="css/event_write.css">
 <link rel="stylesheet" href="css/gj.css">
 <script src="js/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){ 
+	$("#btnEventWrite").click(function(){
+	if($("#etitle").val().length==0){ alert("제목을 입력하세요."); $("#etitle").focus(); return false; }
+	if($("#econtent").val().length==0){ alert("내용을 입력하세요."); $("#econtent").focus(); return false; }
+	if($("#edate").val().length==0){ alert("시작날짜를 입력하세요."); $("#edate").focus(); return false; }
+	if($("#edate2").val().length==0){ alert("종료날짜를 입력하세요."); $("#edate2").focus(); return false; }
+	if($("#file1").val().length==0){ alert("파일을 등록하세요."); $("#file1").focus(); return false; }
+	if($("#file2").val().length==0){ alert("파일을 등록하세요."); $("#file2").focus(); return false; }
+	if($("#eend").val().length==0){ alert("이벤트 진행 유무를 입력하세요."); $("#eend").focus(); return false; }
+	});
+	});
+</script>
 </head>
 <body>
 	<div id="index_content">
@@ -60,19 +73,19 @@
 							</li>
 							<li>
 								<label>내용</label>
-								<textarea name="econtent"></textarea>
+								<textarea name="econtent" id="econtent"></textarea>
 							</li>
 							<li>
 								<label>썸네일</label>
-								<input type="file" name="file1">
+								<input type="file" name="file1" id="file1">
 							</li>
 							<li>
 								<label>이미지</label>
-								<input type="file" name="file2">
+								<input type="file" name="file2" id="file2">
 							</li>
 							<li>
 								<label>이벤트 설정</label>
-								<input type="text" name="eend" placeholder='(0:진행 / 1:종료)'>
+								<input type="text" name="eend" placeholder='(0:진행 / 1:종료)' id="eend">
 							</li>
 							<li>
 								<button type="submit" class="btn_style" id="btnEventWrite">등록</button>
