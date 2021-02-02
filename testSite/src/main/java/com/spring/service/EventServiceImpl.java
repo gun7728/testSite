@@ -108,7 +108,7 @@ public class EventServiceImpl implements EventService {
 				}
 				
 				
-				mv.setViewName("redirect:/event_page.do");
+				mv.setViewName("redirect:/event.do");
 			}else {
 				
 			}
