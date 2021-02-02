@@ -56,24 +56,25 @@ $(document).ready(function(){
 
 				<div class="eline"></div>
 				<div>
-					<form name="event_write_form"  action="event_write_proc.do" method="post" 
+					<form name="event_update_form"  action="event_update_proc.do" method="post" 
 						 class="event_write" enctype="multipart/form-data">				
 						<ul>
 							<li>
+								<input type="hidden" name="eid" id="eid" value="${vo.eid }">
 								<label>제목</label>
-								<input type="text" name="etitle" id="etitle">
+								<input type="text" name="etitle" id="etitle" value="${vo.etitle }">
 							</li>
 							<li>
 								<label>시작</label>
-								<input type="date" name="edate" id="edate" min="0000" max="9999">
+								<input type="date" name="edate" id="edate" min="0000" max="9999" value="${vo.edate }">
 							</li>
 							<li>
 								<label>종료</label>
-								<input type="date" name="edate2" id="edate2" min="0000" max="9999">
+								<input type="date" name="edate2" id="edate2" min="0000" max="9999" value="${vo.edate2 }">
 							</li>
 							<li>
 								<label>내용</label>
-								<textarea name="econtent" id="econtent" style="margin: 0px; width: 90%; height: 300px;"></textarea>
+								<textarea name="econtent" id="econtent" style="margin: 0px; width: 90%; height: 300px;">${vo.econtent }</textarea>
 							</li>
 							<li>
 								<label>썸네일</label>
@@ -89,7 +90,7 @@ $(document).ready(function(){
 									<option value="진행">진행</option>
 									<option value="종료">종료</option>
 								</select>
-								<!-- <input type="text" name="eend" placeholder='(0:진행 / 1:종료)' id="eend"> -->
+								<%-- <input type="text" name="eend" placeholder='(0:진행 / 1:종료)' id="eend" value="${vo.eend }">  --%>
 							</li>
 							<li>
 								<button type="submit" class="btn_style" id="btnEventWrite">등록</button>

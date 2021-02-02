@@ -3,16 +3,17 @@ package com.test.vo;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 public class TestEventVO {
-	int rno, ehits, eend;
+	int rno, ehits;
 
-	String eid, etitle, econtent, efile_t, esfile_t, efile, esfile, edate, edate2;
+	String eid, etitle, econtent, efile_t, esfile_t, efile, esfile, edate, edate2, eend;
 	CommonsMultipartFile file1;
 	CommonsMultipartFile file2;
 	
-	public int getEend() {
+
+	public String getEend() {
 		return eend;
 	}
-	public void setEend(int eend) {
+	public void setEend(String eend) {
 		this.eend = eend;
 	}
 	public int getRno() {

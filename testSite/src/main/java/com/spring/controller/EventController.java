@@ -22,7 +22,7 @@ public class EventController {
 		return eventService.getList(rpage);
 	}
 	
-	@RequestMapping(value="/delete.do",method=RequestMethod.GET)
+	@RequestMapping(value="/event_delete.do",method=RequestMethod.GET)
 	public ModelAndView delete(String eid) {
 		return eventService.getResultDelete(eid);
 	}
@@ -36,6 +36,16 @@ public class EventController {
 	@RequestMapping(value = "/event_write.do", method = RequestMethod.GET)
 	public String board_write(){
 		return "event_write";
+	}
+	
+	@RequestMapping(value = "/event_update.do", method = RequestMethod.GET)
+	public ModelAndView event_update(String eid) {
+		return (ModelAndView)eventService.getUpdate(eid);
+	}
+	
+	@RequestMapping(value = "/event_update_proc.do", method = RequestMethod.POST)
+	public ModelAndView event_update_proc(TestEventVO vo,HttpServletRequest request,String eid) {
+		return (ModelAndView)eventService.getResultUpdate(vo,request,eid);
 	}
 	
 	@RequestMapping(value = "/event_write_proc.do", method = RequestMethod.POST)

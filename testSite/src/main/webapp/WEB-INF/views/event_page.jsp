@@ -51,16 +51,18 @@
 				</div>
 				
 				<div class="e_state_board">
-							<span class="end${vo.eend}">
-								<c:choose>
-								<c:when test="${vo.eend eq 0}">
-								    진행
+							<c:choose>
+								<c:when test="${vo.eend eq '진행'}">								
+									<span class="end0">
+											    진행								    
+									</span>
 								</c:when>
-								<c:when test="${vo.eend eq 1}">
-								    종료
+								<c:when test="${vo.eend eq '종료'}">
+								   	<span class="end1">
+											    종료								    
+									</span>
 								</c:when>
 							</c:choose>
-							</span>
 				</div>
 
 				<div class="e2line"></div>
@@ -76,9 +78,12 @@
 				</div>
 				
 				<div class="e_option">
-					<a href="board_update.do?bid=${vo.eid}"><button type="button" class="btn_style">수정</button></a>
+				
+				<form action="event_update.do?eid=${vo.eid}" method="get" onsubmit="return confirm('해당 게시물을 수정하시겠습니까?');">
+						<input type="hidden" name="eid" id="eid" value="${vo.eid}" ><button type="submit" class="btn_style">수정</button>
+					</form>		
 					
-					<form action="delete.do?eid=${vo.eid}" method="get" onsubmit="return confirm('정말로 삭제하시겠습니까?');">
+					<form action="event_delete.do?eid=${vo.eid}" method="get" onsubmit="return confirm('정말로 삭제하시겠습니까?');">
 						<input type="hidden" name="eid" id="eid" value="${vo.eid}" ><button type="submit" class="btn_style">삭제</button>
 					</form>					
 					

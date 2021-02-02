@@ -147,6 +147,7 @@ public class TestEventDAO extends DBConn {
 	}
 	
 
+	
 
 	/**
 	 * Update : ���� ����
@@ -154,23 +155,26 @@ public class TestEventDAO extends DBConn {
 	public boolean getUpdate(TestEventVO vo) {
 		boolean result = false;
 
-		try {
-			String sql = "update TESTEVENT set etitle=?, encontent=? " + " where eid=?";
-
-			getPreparedStatement(sql);
-			pstmt.setString(1, vo.getEtitle());
-			pstmt.setString(2, vo.getEcontent());
-			pstmt.setString(3, vo.getEid());
-
-			int val = pstmt.executeUpdate();
-			if (val != 0)
-				result = true;
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
+		int value = sqlSession.update(namespace + ".update", vo);
+		if (value != 0)
+			result = true;
 		return result;
+		
+		/*
+		 * boolean result = false;
+		 * 
+		 * try { String sql = "update TESTEVENT set etitle=?, encontent=? " +
+		 * " where eid=?";
+		 * 
+		 * getPreparedStatement(sql); pstmt.setString(1, vo.getEtitle());
+		 * pstmt.setString(2, vo.getEcontent()); pstmt.setString(3, vo.getEid());
+		 * 
+		 * int val = pstmt.executeUpdate(); if (val != 0) result = true;
+		 * 
+		 * } catch (Exception e) { e.printStackTrace(); }
+		 * 
+		 * return result;
+		 */
 	}
 
 }// class

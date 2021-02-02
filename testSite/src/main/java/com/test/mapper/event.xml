@@ -39,6 +39,21 @@
 		  #{etitle},#{econtent},#{efile},#{esfile},#{efile_t},#{esfile_t},#{edate},#{edate2},0,#{eend})	
 	</insert>
 	
+	<update id="update" parameterType="com.test.vo.TestEventVO">
+		update TESTEVENT set 
+		 etitle=#{etitle},
+		 econtent=#{econtent},
+		 efile=#{efile},
+		 esfile=#{esfile},
+		 efile_t=#{efile_t},
+		 esfile_t=#{esfile_t},
+		 edate=#{edate},
+		 edate2=#{edate2},
+		 ehits=0,
+		 eend=#{eend} 
+		 where eid=#{eid}
+				
+	</update>
 	
 	<!-- event:delete -->
 	<delete id="delete" parameterType="java.lang.String">
