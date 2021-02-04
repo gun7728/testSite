@@ -76,11 +76,11 @@ $(document).ready(function(){
 								<textarea name="econtent" id="econtent" style="margin: 0px; width: 90%; height: 300px;"></textarea>
 							</li>
 							<li>
-								<label>썸네일</label>
+								<label>이미지</label>
 								<input type="file" name="file1" id="file1">
 							</li>
 							<li>
-								<label>이미지</label>
+								<label>썸네일</label>
 								<input type="file" name="file2" id="file2">
 							</li>
 							<li>
