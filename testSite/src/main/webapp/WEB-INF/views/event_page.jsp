@@ -78,15 +78,16 @@
 				</div>
 				
 				<div class="e_option">
-				
-				<form action="event_update.do?eid=${vo.eid}" method="get" onsubmit="return confirm('해당 게시물을 수정하시겠습니까?');">
-						<input type="hidden" name="eid" id="eid" value="${vo.eid}" ><button type="submit" class="btn_style">수정</button>
-					</form>		
-					
-					<form action="event_delete.do?eid=${vo.eid}" method="get" onsubmit="return confirm('정말로 삭제하시겠습니까?');">
-						<input type="hidden" name="eid" id="eid" value="${vo.eid}" ><button type="submit" class="btn_style">삭제</button>
-					</form>					
-					
+					<c:set var ="name" value='관리자'/>
+					<c:if test="${name eq '관리자'}">
+						<form action="event_update.do?eid=${vo.eid}" method="get" onsubmit="return confirm('해당 게시물을 수정하시겠습니까?');">
+							<input type="hidden" name="eid" id="eid" value="${vo.eid}" ><button type="submit" class="btn_style">수정</button>
+						</form>		
+							
+						<form action="event_delete.do?eid=${vo.eid}" method="get" onsubmit="return confirm('정말로 삭제하시겠습니까?');">
+							<input type="hidden" name="eid" id="eid" value="${vo.eid}" ><button type="submit" class="btn_style">삭제</button>
+						</form>					
+					</c:if>
 				</div>
 
 				<div class="e_textline">

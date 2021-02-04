@@ -133,3 +133,12 @@ a {
 	text-align:center;
 	margin-top:40px;
 }
+
+.write_btn{
+    background-color: brown;
+    font-size: 15px;
+    color: white;
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 0 10px;
+}

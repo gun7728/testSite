@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8" import="com.test.vo.*"  %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
@@ -70,7 +70,10 @@
 					<a href="https://open.kakao.com/o/smjXAuSc" target="_blank"
 						class="kakao_info"> 카카오톡 1:1 문의 <img class="kakao">
 					</a>
-					<a href="event_write.do">글쓰기(테스트)</a>
+					<c:set var ="name" value='관리자'/>
+					<c:if test="${name eq '관리자'}">
+						<a href="event_write.do" class="write_btn">글쓰기</a>
+					</c:if>
 				</div>
 				<div class="hnm2_text">
 					<h1>Bean's Story의 이벤트를 확인하세요.</h1>
