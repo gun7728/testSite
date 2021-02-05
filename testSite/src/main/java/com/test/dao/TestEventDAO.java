@@ -71,6 +71,8 @@ public class TestEventDAO extends DBConn {
 
 	public TestEventVO getContent(String eid) {
 		TestEventVO vo = new TestEventVO();
+		
+		
 
 		return sqlSession.selectOne(namespace + ".content", eid);
 

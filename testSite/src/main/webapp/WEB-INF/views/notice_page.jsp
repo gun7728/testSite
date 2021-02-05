@@ -63,7 +63,30 @@
 					</div>
 
 				</div>
+				<div class="n3line"></div>
+					
+				<div class="notice_page_text">
+					<h1>
+					${vo.ncontent }
+					</h1>
+					<div class="notice_page_img">
+						<img src="upload/${vo.nsfile}">
+					</div>
 
+				</div>
+				
+				<div class="n_option">
+				
+				<form action="notice_update.do?eid=${vo.nid}" method="get" onsubmit="return confirm('해당 게시물을 수정하시겠습니까?');">
+						<input type="hidden" name="nid" id="nid" value="${vo.nid}" ><button type="submit" class="btn_style">수정</button>
+					</form>		
+					
+					<form action="notice_delete.do?eid=${vo.nid}" method="get" onsubmit="return confirm('정말로 삭제하시겠습니까?');">
+						<input type="hidden" name="nid" id="nid" value="${vo.nid}" ><button type="submit" class="btn_style">삭제</button>
+					</form>					
+					
+				</div>
+				
 				<div class="n_textline">
 					<div class="np_list">
 						<a href="http://localhost:9000/test/notice.do">목록보기</a>

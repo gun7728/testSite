@@ -12,7 +12,6 @@
 		select count(*) from TESTEVENT
 	</select>
 	
-	
 	<select id="list" parameterType="map" resultType="com.test.vo.TestEventVO">
 	select * from (select rownum rno, eid, etitle, 
 			to_char(edate,'yyyy.mm.dd') edate, 
@@ -54,7 +53,7 @@
 		 where eid=#{eid}
 				
 	</update>
-	
+
 	<!-- event:delete -->
 	<delete id="delete" parameterType="java.lang.String">
 		delete from TESTEVENT where eid=#{eid}
