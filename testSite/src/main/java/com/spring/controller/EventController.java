@@ -16,7 +16,7 @@ public class EventController {
 	
 	@Autowired
 	private EventService eventService;
-
+	
 	@RequestMapping(value="/event.do",method=RequestMethod.GET)
 	public ModelAndView event(String rpage) {
 		return eventService.getList(rpage);

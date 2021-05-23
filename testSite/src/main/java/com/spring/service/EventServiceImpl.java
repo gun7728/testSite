@@ -18,6 +18,7 @@ public class EventServiceImpl implements EventService {
 
 	@Autowired
 	private TestEventDAO eventDAO;
+		
 	
 	public ModelAndView getList(String rpage) {
 		ModelAndView mv = new ModelAndView();
@@ -49,10 +50,10 @@ public class EventServiceImpl implements EventService {
 		
 		mv.addObject("list", list);
 		mv.addObject("dbCount", dbCount);
-		mv.addObject("pageSize", pageSize);
+		mv.addObject("pageSize", pageSize);	//그 사이트로 이동 했을 때 넘겨줄 데이터
 		mv.addObject("reqPage", reqPage);
-		mv.setViewName("event");
-
+		mv.setViewName("event");	//이동 할 사이트 이름
+	
 		return mv;
 	}
 
