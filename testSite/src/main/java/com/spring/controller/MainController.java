@@ -7,11 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class MainController {
 	
-	@RequestMapping(value="/notice.do",method=RequestMethod.GET)
-	public String notice() {
-		return "notice";
-	}
-	
+		
 	@RequestMapping(value="/question.do",method=RequestMethod.GET)
 	public String question() {
 		return "question";
@@ -24,11 +20,6 @@ public class MainController {
 	public String youtube() {
 		return "youtube";
 	}
-	@RequestMapping(value="/notice_page.do",method=RequestMethod.GET)
-	public String notice_page() {
-		return "notice_page";
-	}
-
 	
 	
 }

@@ -22,9 +22,11 @@
 	
 	<!-- Service Object -->
 	<beans:bean class="com.spring.service.EventServiceImpl"  id="eventService"></beans:bean>
+	<beans:bean class="com.spring.service.NoticeServiceImpl"  id="noticeService"></beans:bean>
 	
 	<!--  DAO Object -->
 	<beans:bean class="com.test.dao.TestEventDAO" id="eventDAO"></beans:bean>
+	<beans:bean class="com.test.dao.TestNoticeDAO" id="noticeDAO"></beans:bean>
 	
 	<!-- multipartResolver -->
 	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">

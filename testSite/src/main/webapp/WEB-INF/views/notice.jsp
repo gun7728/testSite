@@ -8,34 +8,41 @@
 <title>Notice</title>
 <link rel="stylesheet" href="css/gj.css">
 <link rel="stylesheet" href="css/notice.css">
+<link rel="stylesheet" href = "css/am-pagination.css">
 <script src="js/jquery-3.5.1.min.js"></script>
-<script src="js/am-pagination.js"></script>  
+<script src="js/am-pagination.js"></script>
 <script>
-	$(document).ready(function(){
-		
-		//페이지 번호 및 링크 		
-		var pager = jQuery("#ampaginationsm").pagination({
-			maxSize : 5,			
-			totals:'${dbCount}',
-			page : '${reqPage}',
-			pageSize : '${pageSize}',
-					
-			
-			lastText : '&raquo;&raquo;',
-			firstText : '&laquo;&laquo',
-			prevTest : '&laquo;',
-			nextTest : '&raquo;',
-			
-			btnSize : 'sm' 			
-		}); 
-		
-		//
-		jQuery("#ampaginationsm").on('am.pagination.change',function(e){
-			$(location).attr('href','http://localhost:9000/test/notice.do?rpage='+e.page);  
-			//location.href('이동페이지');
-		});
-		
-	});
+	$(document).ready(
+			function() {
+
+				//페이지 번호 및 링크 		
+				var pager = jQuery("#ampaginationsm").pagination({
+					maxSize : 5,
+					totals : '${dbCount}',
+					page : '${reqPage}',
+					pageSize : '${pageSize}',
+
+					lastText : '&raquo;&raquo;',
+					firstText : '&laquo;&laquo',
+					prevTest : '&laquo;',
+					nextTest : '&raquo;',
+
+					btnSize : 'sm'
+				});
+
+				//
+				jQuery("#ampaginationsm").on(
+						'am.pagination.change',
+						function(e) {
+							$(location).attr(
+									'href',
+									'http://localhost:9000/test/notice.do?rpage='
+											+ e.page);
+							//location.href('이동페이지');
+						});
+
+			});
+</script>
 </head>
 <body>
 	<div id="index_content">
@@ -72,95 +79,45 @@
 				<div class="hnm2_text">
 					<h1>Bean's Story의 공지사항을 확인하세요.</h1>
 				</div>
-								<div class="board_s">
-						<form method="get" name="search_frm" action="notice.do">
-							<input type="hidden" name="mode" value="search"> <input
-								type="hidden" name="Ctg" value> <select name="kefield"
-								class="scu">
-								<option value="subject">제목</option>
-								<option value="content">내용</option>
-							</select>
-							<div class="search_bar">
-								<input type="text" class="sch_txt" name="key" value>
-								<button onclick="bbsSchSub(document.search_frm);"></button>
-							</div>
-						</form>
-					</div>
-<!-- 				<div class="nline"></div> -->
 
-				<div class="board_top">
-	
+				<div class="nline"></div>
 
-				</div>
 				<ul class="n_board">
+					<c:forEach var="vo" items="${list}">
+						<li>
 
-					<%--
- 			<c:forEach var="vo" items="${list}">
-				<li>
-				
-					<div class="e_img_board>
-						<a href="${vo.board_link}">
-							<img src="${vo.board_link}">
-						</a>
-					</div>
-					
-					<div class="e_content_board">
-						<dt>
-							<a href="${vo.board_link}">${vo.board_title}</a>
-						</dt>
-						<dd>
-							<span class="brown_txt">기간 : </span>${vo.board_term}
-						</dd>
-					</div>
-					
-					<div class="e_state_board">
-						<span class="end">${vo.board_state}</span>
-					</div>				
-				</li>
-			</c:forEach> 
---%>
+							<div class="e_img_board">
+								<a href="event_page.do?id=${vo.nid}"> <img
+									src="upload/${vo.getNfile_t()}">
+								</a>
+							</div>
 
-					<li>
-								<h1 class="n_date">2020-12-15</h1>
-						<div class="n_img_board">
-							<a href="notice_page.do"> <img src="images/notices.png">
-							</a>
-							
-						</div>
-						<div class="n_content_board">
-							<dt>
-								<a href="notice_page.do">Bean's Story 영업시간 변경 안내</a><br>
-							</dt>
-							<dd>
-					<span class="ngray_txt">안녕하세요! Bean's Story입니다. 2020-12-25일부터 Bean's Story의 </span> 
-						
-							</dd>
-					
-						</div>
-<!-- 						<div class="n_state_board">
-							<span class="nend">종료</span>
-						</div> -->
-					</li>
+							<div class="e_content_board">
+								<dt>
+									<a href="event_page.do?id=${vo.nid}">${vo.ntitle}</a>
+								</dt>
+								<dd>
+									<span class="brown_txt">작성일 </span>${vo.ndate}
+								</dd>
+							</div>
+						</li>
+					</c:forEach>
 
 				</ul>
 
-
-
-
-
-
-				<!-- 			 	<div class="n_textline1">			
+				<!-- 
+		 	<div class="n_textline1">			
 			 	<div class ="notice_pagelist">
 				<a href = "notice_page.do">공지사항 드립니다.</a>
 				</div> -->
 
 
+			<div id="ampaginationsm"></div>
+				
+				<div class="n_textline"></div>
 			</div>
-
-			<div class="n_textline"></div>
-				</section>
+		</section>
 	</div>
-
 
 </body>
 </html>
