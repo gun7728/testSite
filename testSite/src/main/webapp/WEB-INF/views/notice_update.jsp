@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>notice_page</title>
-<link rel="stylesheet" href="css/notice_write.css">
+<link rel="stylesheet" href="css/event_write.css">
 <link rel="stylesheet" href="css/gj.css">
 <script src="js/jquery-3.5.1.min.js"></script>
 <script>
@@ -26,7 +26,7 @@ $(document).ready(function(){
 			<div class="main_text_field">
 				<h1 class="main_text">공지 사항</h1>
 				<p class="sub_text">
-					<span>Bean's Story</span> <br>공지사항 작성
+					<span>Bean's Story</span> <br>공지 작성
 				</p>
 			</div>
 			<div class="list">
@@ -43,31 +43,32 @@ $(document).ready(function(){
 
 		</section>
 		<section>
-			<div class="notice_page">
+			<div class="event_page">
 
-				<div class="notice_text">
-					<h1>HOME > 공지사항 </h1>
+				<div class="event_text">
+					<h1>HOME > 공지사항 > 공지사항</h1>
 					<a href="https://open.kakao.com/o/smjXAuSc" target="_blank"
 						class="kakao_info"> 카카오톡 1:1 문의 <img class="kakao">
 					</a>
 				</div>
 
-				<div class="nline"></div>
+				<div class="eline"></div>
 				<div>
-					<form name="notice_write_form"  action="notice_write_proc.do" method="post" 
+					<form name="notice_update_form"  action="notice_update_proc.do" method="post" 
 						 class="notice_write" enctype="multipart/form-data">				
 						<ul>
 							<li>
+								<input type="hidden" name="nid" id="nid" value="${vo.nid }">
 								<label>제목</label>
-								<input type="text" name="ntitle" id="ntitle">
+								<input type="text" name="ntitle" id="ntitle" value="${vo.ntitle }">
 							</li>
 							<li>
 								<label>공지일</label>
-								<input type="date" name="ndate" id="ndate" min="0000" max="9999">
+								<input type="date" name="ndate" id="ndate" min="0000" max="9999" value="${vo.ndate }">
 							</li>
 							<li>
 								<label>내용</label>
-								<textarea name="ncontent" id="ncontent" style="margin: 0px; width: 90%; height: 300px;"></textarea>
+								<textarea name="ncontent" id="ncontent" style="margin: 0px; width: 90%; height: 300px;">${vo.ncontent }</textarea>
 							</li>
 							<li>
 								<label>이미지</label>
@@ -122,15 +123,15 @@ $(document).ready(function(){
 
 				</div> --%>
 
-				<div class="n_textline">
-					<div class="np_list">
+				<div class="e_textline">
+					<div class="ep_list">
 						<a href="http://localhost:9000/test/notice.do">목록보기</a>
 					</div>
 				</div>
 
 
 
-				<div class="n_textline2"></div>
+				<div class="e_textline2"></div>
 
 				
 			</div>

@@ -23,8 +23,8 @@ public class NoticeController {
 	}
 	
 	@RequestMapping(value="/notice_delete.do",method=RequestMethod.GET)
-	public ModelAndView delete(String eid) {
-		return noticeService.getResultDelete(eid);
+	public ModelAndView delete(String nid) {
+		return noticeService.getResultDelete(nid);
 	}
 	
 	@RequestMapping(value="/notice_page.do",method=RequestMethod.GET)
@@ -39,13 +39,13 @@ public class NoticeController {
 	}
 	
 	@RequestMapping(value = "/notice_update.do", method = RequestMethod.GET)
-	public ModelAndView notice_update(String eid) {
-		return (ModelAndView)noticeService.getUpdate(eid);
+	public ModelAndView notice_update(String nid) {
+		return (ModelAndView)noticeService.getUpdate(nid);
 	}
 	
 	@RequestMapping(value = "/notice_update_proc.do", method = RequestMethod.POST)
-	public ModelAndView notice_update_proc(TestNoticeVO vo,HttpServletRequest request,String eid) {
-		return (ModelAndView)noticeService.getResultUpdate(vo,request,eid);
+	public ModelAndView notice_update_proc(TestNoticeVO vo,HttpServletRequest request,String nid) {
+		return (ModelAndView)noticeService.getResultUpdate(vo,request,nid);
 	}
 	
 	@RequestMapping(value = "/notice_write_proc.do", method = RequestMethod.POST)

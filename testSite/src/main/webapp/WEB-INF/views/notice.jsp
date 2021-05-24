@@ -74,6 +74,7 @@
 					<h1>HOME > 공지사항</h1>
 					<a href="https://open.kakao.com/o/smjXAuSc" target="_blank"
 						class="kakao_info"> 카카오톡 1:1 문의 <img class="kakao">
+						<a href="notice_write.do" class="write_btn">글쓰기</a>
 					</a>
 				</div>
 				<div class="hnm2_text">
@@ -87,14 +88,14 @@
 						<li>
 
 							<div class="e_img_board">
-								<a href="event_page.do?id=${vo.nid}"> <img
+								<a href="notice_page.do?id=${vo.nid}"> <img
 									src="upload/${vo.getNfile_t()}">
 								</a>
 							</div>
 
 							<div class="e_content_board">
 								<dt>
-									<a href="event_page.do?id=${vo.nid}">${vo.ntitle}</a>
+									<a href="notice_page.do?id=${vo.nid}">${vo.ntitle}</a>
 								</dt>
 								<dd>
 									<span class="brown_txt">작성일 </span>${vo.ndate}

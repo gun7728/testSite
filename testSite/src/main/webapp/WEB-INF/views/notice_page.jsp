@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>	
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,26 +45,11 @@
 
 				<div class="nline"></div>
 				<div class="hnm_text2">
-					<h1 class="hnm_title">Bean's Story 영업시간 변동 안내</h1>
-					<h1 class="hnm_date">2020-12-15</h1>
+					<h1 class="hnm_title">${vo.ntitle}</h1>
+					<h1 class="hnm_date">${vo.ndate}</h1>
 				</div>
 
 				<div class="n2line"></div>
-
-				<div class="page_text">
-					<h1>
-						안녕하세요! Bean's Story입니다.<br> 2020-12-25일부터 Bean's Story의 영업시간이
-						변경되오니 참고부탁드립니다.<br> 감사합니다.<br>
-						<br>
-						<br>
-						<br>
-					</h1>
-					<div class="page_img">
-						<img src="images/noticepage.PNG">
-					</div>
-
-				</div>
-				<div class="n3line"></div>
 					
 				<div class="notice_page_text">
 					<h1>

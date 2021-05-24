@@ -6,56 +6,52 @@
 
 <mapper namespace="mapper.notice">
 
-	
-	<!-- notice:listcount  -->
+
+	<!-- notice:listcount -->
 	<select id="listcount" resultType="int">
-		select count(*) from TESTNOTICE
+		select count(*) from
+		TESTNOTICE
 	</select>
-	
-	<select id="list" parameterType="map" resultType="com.test.vo.TestNoticeVO">
-	select * from (select rownum rno, nid, ntitle, 
-			to_char(ndate,'yyyy.mm.dd') ndate,  
-			nhits, nsfile_t nfile_t
-	 from (select * from TESTNOTICE order by ndate desc))
-	 where rno between #{start} and #{end}
+
+	<select id="list" parameterType="map"
+		resultType="com.test.vo.TestNoticeVO">
+		select * from (select rownum rno, nid, ntitle,
+		to_char(ndate,'yyyy.mm.dd') ndate,
+		nhits, nsfile_t nfile_t
+		from (select * from TESTNOTICE order by ndate desc))
+		where rno between #{start} and #{end}
 	</select>
-<!-- 
 
 	<select id="content" parameterType="java.lang.String"
-				resultType="com.test.vo.TestEventVO">
-			select eid,etitle, econtent ,to_char(edate,'yyyy.mm.dd') edate,
-				to_char(edate2,'yyyy.mm.dd') edate2,ehits, efile, 
-				esfile, efile_t, esfile_t, eend 
-		  		 from TESTEVENT where eid=#{eid}
+		resultType="com.test.vo.TestNoticeVO">
+		select nid,ntitle, ncontent ,to_char(ndate,'yyyy.mm.dd') ndate,
+		nhits, nfile,
+		nsfile, nfile_t, nsfile_t
+		from TESTNOTICE where nid=#{nid}
 	</select>
 	
-	
-		event:insert
-	<insert id="insert" parameterType="com.test.vo.TestNoticeVO">	
-		insert into TESTEVENT 
-		  values('n_'||sequ_TESTEVENT.nextval,
-		  #{etitle},#{econtent},#{efile},#{esfile},#{efile_t},#{esfile_t},#{edate},#{edate2},0,#{eend})	
+	<insert id="insert" parameterType="com.test.vo.TestNoticeVO">
+		insert into TESTNOTICE
+		  values('n_'||sequ_TESTNOTICE.nextval,
+		  #{ntitle},#{ncontent},#{nfile},#{nsfile},#{nfile_t},#{nsfile_t},#{ndate},0)
 	</insert>
-	
+
 	<update id="update" parameterType="com.test.vo.TestNoticeVO">
-		update TESTEVENT set 
-		 etitle=#{etitle},
-		 econtent=#{econtent},
-		 efile=#{efile},
-		 esfile=#{esfile},
-		 efile_t=#{efile_t},
-		 esfile_t=#{esfile_t},
-		 edate=#{edate},
-		 edate2=#{edate2},
-		 ehits=0,
-		 eend=#{eend} 
-		 where eid=#{eid}
-				
+		update TESTNOTICE set
+		ntitle=#{ntitle},
+		ncontent=#{ncontent},
+		nfile=#{nfile},
+		nsfile=#{nsfile},
+		nfile_t=#{nfile_t},
+		nsfile_t=#{nsfile_t},
+		ndate=#{ndate},
+		nhits=0,
+		where nid=#{nid}
 	</update>
 
-	event:delete
 	<delete id="delete" parameterType="java.lang.String">
-		delete from TESTEVENT where eid=#{eid}
-	</delete> -->
-	
+		delete from TESTNOTICE where
+		nid=#{nid}
+	</delete>
+
 </mapper>
